@@ -1,0 +1,253 @@
+/*ml-auto = margin left:auto
+pt-4 = padding-top:4em
+pb-4 = padding-bottom:4em */
+body{
+font-family: 'Montserrat', sans-serif;}
+
+
+
+
+
+                        /* BARRE DE NAVIGATION  */
+
+.navbar{
+    border-bottom: 3px solid white;
+
+    /* */
+    z-index: 9999;
+    position: fixed !important;
+    top: 0 ;
+    width: 100%;
+}
+
+.navbar-brand{ font-size: 1.75em;
+font-weight: 700;
+text-transform: uppercase;}
+
+
+#navbarNav .nav-link{
+    color: white;
+    font-weight: 700;
+    padding: 0 20px;
+    padding: 5px 10px;}
+
+
+#navbarNav .nav-link:hover{
+    color: #000000;
+    background: linear-gradient(to top,
+     rgb(34, 223, 97),
+     #0f0f11 5%,
+     rgb(42, 74, 161) 7%,
+     #ffffff 15%);
+    border-radius: 15px;}
+
+
+
+
+
+
+
+
+
+    
+                                 /* SEPARATEUR */
+.bg-portfolio p{
+    font-size: 1.5rem;}
+                                
+ .separator .line{
+    height: 2px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px 5px;}
+                                
+
+
+
+
+                                 /* PARTIE PORTFOLIO */
+.bg-portfolio{
+    background: linear-gradient(#000000, #9198e5);;
+    color: white;
+    padding: 2rem 0; 
+    /* 6fois le font-size du body */}
+
+.bg-portfolio h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;}
+
+
+
+
+
+
+
+                                /* A PROPOS */
+
+.bg-about{
+    background-color: #9198e5;
+    color: white;
+    padding: 1rem 0;}
+
+.bg-about h2{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+color: black;}
+
+
+.titleli{
+    color: black;
+    font-weight: bold;
+}
+
+/* A PROPOS  carousel*/
+
+
+
+.puceOk{
+    list-style: "\002611";
+}
+
+
+.nopuce{
+    list-style-type: none;
+}
+
+
+
+.carousel-control-next, .carousel-control-prev{
+
+    background-color: rgb(37, 28, 28);
+    position: absolute;
+    width: 5% !important;}
+
+.carousel-control-next{
+    right: -60px!important;}
+
+.carousel-control-prev{
+    left: -60px!important;}
+
+
+
+
+
+                                 /* PARTIE PROJET */
+.image{
+    border-radius: 15px;
+height: 250px;
+object-fit: cover;}
+
+.image:hover{
+    background-color: rgba(19, 185, 185, 0.75);
+
+}
+
+
+
+      /*      @media()      */
+
+
+.bg-project h2{
+
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 2rem;  
+}
+
+.bg-project .line{background-color: black;}
+
+
+
+.bg-project .filter{
+    background-color: rgba(0, 128, 128, 0.589);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;}
+
+.bg-project .filter:hover{
+    opacity:1;
+
+}
+
+
+
+.hauteurModal{
+    top: 40px !important;
+}
+
+
+
+
+
+
+                                /* PARTIE CONTACT */
+.contact{
+    background-color: #9198e5;}
+
+.contact-form .form-control{
+    border:0;
+    border-bottom: 1px solid black;}
+
+.contact-form .form-control:focus{
+     box-shadow: none;}
+
+
+
+.envoyermail{
+    text-transform: uppercase;
+}
+
+
+/* FOOTER*/
+footer{
+    padding:2rem 0;
+    text-align: center;
+    color: white;}
+
+
+footer h3{
+    text-transform:uppercase ;}
+
+footer a{
+    color: white;}
+
+footer .btn-outline-light{
+
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        line-height: 36px;
+        padding: 6px;
+        margin: 0 5px;
+        border-width: 2px;}
+
+footer i{
+        width: 25px;
+        height: 20px;
+        transition: 0.5s;}
+
+footer a:hover i{
+        transform: rotate(360deg);}
+
+
+.bg-copyright{
+        background-color: black;
+        color: white;}
+
+
+
+.shadowblock{
+    box-shadow: 10px 10px 10px rgb(37, 28, 28);
+}
+
