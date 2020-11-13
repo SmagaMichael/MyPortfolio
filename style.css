@@ -93,6 +93,12 @@ text-transform: uppercase;}
 
 
                                 /* A PROPOS */
+#APROPOS{
+    padding-top: 60px;
+}
+.carousel{
+    padding: 0 65px !important;
+}
 
 .bg-about{
     background-color: #9198e5;
@@ -104,7 +110,7 @@ text-transform: uppercase;}
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-color: black;}
+    color: black;}
 
 
 .titleli{
@@ -114,17 +120,11 @@ color: black;}
 
 /* A PROPOS  carousel*/
 
-
-
 .puceOk{
-    list-style: "\002611";
-}
-
+    list-style: "\002611";}
 
 .nopuce{
-    list-style-type: none;
-}
-
+    list-style-type: none;}
 
 
 .carousel-control-next, .carousel-control-prev{
@@ -134,24 +134,30 @@ color: black;}
     width: 5% !important;}
 
 .carousel-control-next{
-    right: -60px!important;}
+    right: 0px!important;}
 
 .carousel-control-prev{
-    left: -60px!important;}
+    left: 0px!important;}
 
 
 
 
 
                                  /* PARTIE PROJET */
+
+
+#PROJECT{
+    padding-top: 60px;
+}
+
+
 .image{
     border-radius: 15px;
 height: 250px;
 object-fit: cover;}
 
-.image:hover{
-    background-color: rgba(19, 185, 185, 0.75);
-
+.bg-project .row img{
+    height: 245px;
 }
 
 .baseprojet{
@@ -163,6 +169,7 @@ object-fit: cover;}
     border: 3px solid black;
     border-radius: 15px;
     object-fit: cover;
+    flex-wrap: wrap;
 }
 
 
@@ -173,6 +180,10 @@ object-fit: cover;}
     text-transform: uppercase;
     font-weight: 700;
 }
+.baseprojet  .sousP{
+    font-size: 16px;
+}
+
 
 .bg-project h2{
 
@@ -217,7 +228,8 @@ object-fit: cover;}
 
                                 /* PARTIE CONTACT */
 .contact{
-    background-color: #9198e5;}
+    background-color: #9198e5;
+    margin-top: 30px;}
 
 .contact-form .form-control{
     border:0;
