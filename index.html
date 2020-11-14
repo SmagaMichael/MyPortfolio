@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Smaga Michaël</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extension/particles/css/style.css">
 
 
     <!--permet de charger tout les composants à partir du serveur de bootstrap -->
@@ -56,14 +57,19 @@
         </div>
     </nav>
 
-
                                     <!-- Partie PORTFOLIO-->
-
     <img class="codegif" src="img/code1.gif" alt="">
 
 
+
+  
+  <!-- particles.js container -->
+
+
     <div class="bg-portfolio">
-        <div class="container text-center">
+        <div id="particles-js" ></div>
+
+        <div class="container text-center fondTitle">
             <br><br>
             <img width="240" src="img/avatarb.png" alt="Smaga Michaël">
             <h1>Smaga Michaël</h1>
@@ -76,6 +82,14 @@
             <p>développeur web</p>
         </div>
     </div>
+    
+
+
+
+
+
+
+
 
 
 
@@ -514,6 +528,7 @@
                                        
     
     <div class="contact">
+
         <div class="container text-center">
 
                                 <!--Separateur-->
@@ -531,6 +546,7 @@
                                     <!--formulaire  contact-->
 
         <div class="row">
+
            <div class="col-lg-8 mx-auto">
                 <form action="" class="contact-form"> <!--balise pour indiquer le formulaire-->
                     <div class="form-group shadowblock">
@@ -617,7 +633,9 @@
 
     </div>
     
-
+<!-- scripts -->
+    <script src="extension/particles/particles.js"></script>
+    <script src="extension/particles/js/app.js"></script>
 
     <script src="extension/jquery-3.5.1.min.js"></script>
     <script src="extension/bootstrap.bundle.min.js" ></script>

@@ -53,7 +53,12 @@ text-transform: uppercase;}
                                  /* SEPARATEUR */
 .bg-portfolio p{
     font-size: 1.5rem;}
-                                
+                
+    
+.fondTitle{
+
+}
+
  .separator .line{
     height: 2px;
     width: 200px;
@@ -75,10 +80,12 @@ text-transform: uppercase;}
 
 
 
-                                 .bg-portfolio{
-    background: linear-gradient(#000000, #9198e5);;
+.bg-portfolio{
+    background: linear-gradient(#000000, #9198e5);
+    position: relative;
     color: white;
     padding: 2rem 0; 
+   
     /* 6fois le font-size du body */}
 
 .bg-portfolio h1{
