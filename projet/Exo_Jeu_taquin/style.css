@@ -1,14 +1,36 @@
+body, html {
+    height: 100%;
+  }
+
 body{
     display: flex;
     justify-content: center;
-    align-items: center;}
+    background-image: url(img/Aperturebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.StartShotTime{
+    display: flex;
+    margin-top: 20px ;
+}
+.start, #shots  {
+    margin: 0px 60px;
+    
+}
+
+#shots, #Time{
+    color: white;
+}
+
 
 .Ensemble{
     border: 5px solid rgb(0, 0, 0);
     width: 510px;
     height: 510px;
     flex-wrap: wrap;
-    margin: 20px;
     padding: 10px;
     position: relative;}
 

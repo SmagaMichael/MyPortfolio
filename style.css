@@ -4,7 +4,9 @@ pb-4 = padding-bottom:4em */
 body{
 font-family: 'Montserrat', sans-serif;}
 
-
+.page{
+background: linear-gradient(#000000, #9198e5);
+}
 
 
 
@@ -12,7 +14,7 @@ font-family: 'Montserrat', sans-serif;}
 
 .navbar{
     border-bottom: 3px solid white;
-
+    background-color: black !important;
     /* */
     z-index: 9999;
     position: fixed !important;
@@ -34,11 +36,7 @@ text-transform: uppercase;}
 
 #navbarNav .nav-link:hover{
     color: #000000;
-    background: linear-gradient(to top,
-     rgb(34, 223, 97),
-     #0f0f11 5%,
-     rgb(42, 74, 161) 7%,
-     #ffffff 15%);
+    background: white;
     border-radius: 15px;}
 
 
@@ -52,12 +50,9 @@ text-transform: uppercase;}
     
                                  /* SEPARATEUR */
 .bg-portfolio p{
-    font-size: 1.5rem;}
+    font-size: 1.5rem;
+color:white}
                 
-    
-.fondTitle{
-
-}
 
  .separator .line{
     height: 2px;
@@ -66,7 +61,6 @@ text-transform: uppercase;}
     border-radius: 10px;
     margin: 5px 5px;}
                                 
-
 
 
 
@@ -81,7 +75,7 @@ text-transform: uppercase;}
 
 
 .bg-portfolio{
-    background: linear-gradient(#000000, #9198e5);
+    background: transparent;
     position: relative;
     color: white;
     padding: 2rem 0; 
@@ -95,7 +89,10 @@ text-transform: uppercase;}
 
 
 
-
+.backgroundApropos{
+    background-color:#292b41;
+}
+    
 
 
 
@@ -108,7 +105,6 @@ text-transform: uppercase;}
 }
 
 .bg-about{
-    background-color: #9198e5;
     color: white;
     padding: 1rem 0;}
 
@@ -117,11 +113,12 @@ text-transform: uppercase;}
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    color: black;}
+    color: rgb(255, 255, 255);}
 
 
 .titleli{
-    color: black;
+    color: rgb(240, 232, 232);
+    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -135,19 +132,22 @@ text-transform: uppercase;}
 
 
 .carousel-control-next, .carousel-control-prev{
-
     background-color: rgb(37, 28, 28);
     position: absolute;
     width: 5% !important;}
 
 .carousel-control-next{
+    background-color: #7988a0;
     right: 0px!important;}
 
 .carousel-control-prev{
+    background-color: #7988a0;
     left: 0px!important;}
 
 
-
+.buttonCV{
+    margin: 5px 0;
+}
 
 
                                  /* PARTIE PROJET */
@@ -155,13 +155,19 @@ text-transform: uppercase;}
 
 #PROJECT{
     padding-top: 60px;
+    color: white;
 }
+.bg-project .line{
+    background-color: white;}
 
+.bg-project .fa-folder-open{
+    color: white;
+}
 
 .image{
     border-radius: 15px;
-height: 250px;
-object-fit: cover;}
+    height: 250px;
+    object-fit: cover;}
 
 .bg-project .row img{
     height: 245px;
@@ -201,8 +207,6 @@ object-fit: cover;}
     padding-top: 1rem;  
 }
 
-.bg-project .line{background-color: black;}
-
 
 
 .bg-project .filter{
@@ -233,9 +237,13 @@ object-fit: cover;}
 
 
 
-                                /* PARTIE CONTACT */
+                /* PARTIE CONTACT */
+#CONTACT{
+    color: ;
+}
+                
 .contact{
-    background-color: #9198e5;
+    background-color: transparent;
     margin-top: 30px;}
 
 .contact-form .form-control{
@@ -245,14 +253,22 @@ object-fit: cover;}
 .contact-form .form-control:focus{
      box-shadow: none;}
 
-
+.buttonContact{
+    background-color: transparent;
+}
 
 .envoyermail{
     text-transform: uppercase;
 }
 
+.buttonContact{
+    margin: 25px 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
 
-/* FOOTER*/
+
+                /* FOOTER*/
 footer{
     padding:2rem 0;
     text-align: center;
