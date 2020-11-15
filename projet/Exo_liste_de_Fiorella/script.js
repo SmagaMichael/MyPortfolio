@@ -1,47 +1,47 @@
 
 
-var girafe ='Sophie la girafe'
-var trotteur ='trotteur'
-var livrecss ='livrecss'
-var ours ='Petit ours brun'
-var doudou ='doudou'
-var leon ='Léon l\'ourson'
-var piano ='piano'
-var form ='cubes et sphéres'
+var Elsa ='Elsa + Olaf'
+var Draco ='Peluche Draco'
+var Drone ='Drone'
+var FirstPC ='My FirstPC'
+var DollHouse ='My DollHouse'
+var Monster ='Monster High'
+var Miraculous ='Costume Ladybug '
+var Societe ='Jeu de société'
 
 var i = 1;
 
 
-$('.girafe').click(function(){
-    $('.Article' +i ).text('Article  : ' + girafe)
+$('.Elsa').click(function(){
+    $('.Article' +i ).text('Article  : ' + Elsa)
        i++})
 
-$('.trotteur').click(function(){
-    $('.Article' +i).text('Article  : ' + trotteur)
+$('.Draco').click(function(){
+    $('.Article' +i).text('Article  : ' + Draco)
     i++})
 
-$('.livrecss').click(function(){
-    $('.Article'+i).text('Article  : ' + livrecss)
+$('.Drone').click(function(){
+    $('.Article'+i).text('Article  : ' + Drone)
     i++})
 
-$('.ours').click(function(){
-    $('.Article'+i).text('Article  : ' + ours)
+$('.FirstPC').click(function(){
+    $('.Article'+i).text('Article  : ' + FirstPC)
     i++})
 
-$('.doudou').click(function(){
-    $('.Article'+i).text('Article  : ' + doudou)
+$('.DollHouse').click(function(){
+    $('.Article'+i).text('Article  : ' + DollHouse)
     i++})
 
-$('.leon').click(function(){
-    $('.Article'+i).text('Article  : ' + leon)
+$('.Monster').click(function(){
+    $('.Article'+i).text('Article  : ' + Monster)
     i++})
 
-$('.piano').click(function(){
-    $('.Article'+i).text('Article  : ' + piano)
+$('.Miraculous').click(function(){
+    $('.Article'+i).text('Article  : ' + Miraculous)
     i++})
 
-$('.form').click(function(){
-    $('.Article'+i).text('Article  : ' + form)
+$('.Societe').click(function(){
+    $('.Article'+i).text('Article  : ' + Societe)
     i++})
 
 
