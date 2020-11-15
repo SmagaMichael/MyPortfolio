@@ -14,7 +14,7 @@ body{
 
 .StartShotTime{
     display: flex;
-    margin-top: 20px ;
+    margin-top: 50px ;
 }
 .start, #shots  {
     margin: 0px 60px;
@@ -150,3 +150,7 @@ background-size: 500px ;
     top:375px;
     left: 375px;
     background-attachment: none;}
+
+#win{
+    text-align: center;
+}

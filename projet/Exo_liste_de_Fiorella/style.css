@@ -1,26 +1,9 @@
+body, html {height: 100%;}
 
 body{
-    display: flex;
-    justify-content: center;
-    background-image: url(img/fond.jpg);
-    background-repeat: no-repeat;
+    background-image: url(img/fond4.jpg);
     background-size: cover ;
-}
-
-.merci{
-    display: none;
-    position: absolute;
-    width: auto;
-    height: auto;
-    z-index: 3;
-    justify-content: center;    
-    top: 475px;
-    background-color: brown;
-    border: 3px solid cornsilk;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 50px;
-    padding: 10px;
+    display: flex;
 }
 
 
@@ -28,17 +11,21 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1000px;
-    margin-top: -175px;}
+    width: auto;
+    margin: 10px;
+    z-index: 5;}
 
+/* MAGASINE */
 
-button{
-    margin: 1px;
-    width: 24%;}
+.magasine > p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #338c44;
+  font-weight: 700;
+  width: 100%;
+}
 
-img{
-    height: 50px;
-    width: 50px;}
 
 .magasine{
     border: 1px solid black;
@@ -47,22 +34,24 @@ img{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
-    margin-top: 220px ;
+    margin-top: 30px  ;
     padding-bottom: 15px;
     background-color: brown;
     text-align: center;
 }
 
-.magasine > p{
-    background-color: cornsilk;
-    width: 100%;
+button{
+  margin: 1px;
+  width: 24%;}
+
+  .magasine > button:hover{
+    background-color: rgb(51, 94, 22);
+    color: cornsilk;
 }
 
-
-.selection{
-  background-color: darkblue !important;
-}
-
+img{
+  height: 50px;
+  width: 50px;}
 
 
 
@@ -75,81 +64,99 @@ img{
     width: 100%;
     background-color: brown;
     padding-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .panier > p{
-    background-color: cornsilk;
+    background-color:  #338c44;
+    font-weight: 700;
     width: 100%;
 }
 
 .titreArticle{
-    color: cornsilk;
+    color:  #e3e9e4;
+    font-weight: 700;
 }
 
-.santa{
-    position: absolute;
-    width: 300px;
-    height: auto;
-    left: 400px;
-    top: 475px;
+.AllChoice{
+  flex-wrap: wrap;
+  width: 300px;
+  
+}
+
+.choice{
+  width: 100%;
 }
 
 .jack{
-    position: absolute;
     width: 300px;
     height: auto;
-    left: 1180px;
-    top: 475px;
+    left: 700px;
+    top: 100px;
 }
-
-.sled{
-    position: absolute;
-    width: 300px;
-    height: auto;
-    left: 1580px;
-    top: 740px;
-}
-
-.magasine > button:hover{
-    background-color: rgb(51, 94, 22);
-    color: cornsilk;
-}
-
-
 
 .deleteArticle{
-
-}
-.allArticle{
-  flex-wrap: wrap;
+  width: auto;
+  margin-right: 10px;
 }
 
 
 
+.Send{
+  width: 300px;
+}
+
+.SendJack{
+  width: 100%;
+}
 
 
 
 
 
 
+.sled{
+  position: absolute;
+  width: 300px;
+  height: auto;
+  left: 1580px;
+  top: 740px;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+.merci{
+  display: none;
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 3;
+  justify-content: center;    
+  top: 0px;
+  background-color: brown;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
+  padding: 10px;
+  margin: 0;
+}
 
 
 .merci {
-  
     /* Font options */
    font-family: 'Pacifico', cursive;
    text-shadow: 2px 2px 4px #000000;

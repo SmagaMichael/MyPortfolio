@@ -13,35 +13,35 @@ var i = 1;
 
 
 $('.girafe').click(function(){
-    $('.Article' +i ).text('Article 1 : ' + girafe)
+    $('.Article' +i ).text('Article  : ' + girafe)
        i++})
 
 $('.trotteur').click(function(){
-    $('.Article' +i).text('Article 1 : ' + trotteur)
+    $('.Article' +i).text('Article  : ' + trotteur)
     i++})
 
 $('.livrecss').click(function(){
-    $('.Article'+i).text('Article 1 : ' + livrecss)
+    $('.Article'+i).text('Article  : ' + livrecss)
     i++})
 
 $('.ours').click(function(){
-    $('.Article'+i).text('Article 1 : ' + ours)
+    $('.Article'+i).text('Article  : ' + ours)
     i++})
 
 $('.doudou').click(function(){
-    $('.Article'+i).text('Article 1 : ' + doudou)
+    $('.Article'+i).text('Article  : ' + doudou)
     i++})
 
 $('.leon').click(function(){
-    $('.Article'+i).text('Article 1 : ' + leon)
+    $('.Article'+i).text('Article  : ' + leon)
     i++})
 
 $('.piano').click(function(){
-    $('.Article'+i).text('Article 1 : ' + piano)
+    $('.Article'+i).text('Article  : ' + piano)
     i++})
 
 $('.form').click(function(){
-    $('.Article'+i).text('Article 1 : ' + form)
+    $('.Article'+i).text('Article  : ' + form)
     i++})
 
 
@@ -49,20 +49,23 @@ $('.form').click(function(){
 
 // le traineau bouge une fois cliqué sur les achats
 $('.Send').click(function(){
-    $('.Send').text('GO')
-
-    $('.sled').animate({
-        left: '-=1500',
-    },5000)
+    $('.Send').text('Merci et Joyeux Noël')
+ //   $('.sled').animate({
+ //       left: '-=1500',
+ //   },5000)
 });
+
 
 
 
 
     // un message  s'affiche quand on fini les achats
 $( '.Send' ).click(function() {
-    if ($('.Send').text() === 'GO')
-            { $( '.merci' ).toggle( "slow" );}
+    if ($('.Send').text() === 'Merci et Joyeux Noël')
+            { $( '.merci' ).toggle( "slow" );
+           // $('.Send').prop('disabled', true);
+        
+        }
     });
 
 
@@ -77,26 +80,18 @@ $( '.magasine > button' ).click(function() {
 var i2 = 0
 
 
-    $('.magasine > button' ).click(function(){
-        i2++
-        console.log(i2);
+$('.magasine > button' ).click(function(){
+i2++
+console.log(i2);
 
-        $('.reste' ).text('il vous reste ' +(5 - i2)+ ' choix');
-        if(i2 >= 5){
-            alert('nombres de choix atteint');
-            $('.magasine > button').unbind("click");}
-
-
-       //reste à choisir
-      
-      
-       
-            
+$('.reste' ).text('il vous reste ' +(5 - i2)+ ' choix 🎅');
+    if(i2 >= 5){
+    alert('nombres de choix atteint');
+    $('.magasine > button').unbind("click");}
 
 
 
-    
-        });
+});
 
     
      
