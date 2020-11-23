@@ -24,6 +24,9 @@
 
 
 <body>
+
+
+
                         <!--BARRE DE NAVIGATION BOOTSTRAP-->
     <nav class="navbar navbar-expand-lg navbar-dark  pt-2 pb-2">
         <div class="container">
@@ -111,7 +114,7 @@
                                     <p>Madame, Monsieur,</p>
                     
                                     <p>
-                                    Etant inscrit au centre de formation M2i, à la formation : ‘’ Concepteur / Développeur d'Application’’, je suis à la recherche d’une entreprise dans ce domaine pour y effectuer un stage afin de valider cette formation. (Date de stage: 5 Mai 2021 au 4 aoùt 2021).
+                                    Etant inscrit au centre de formation M2i, à la formation : ‘’ Concepteur / Développeur d'Application’’, je suis à la recherche d’une entreprise dans ce domaine pour y effectuer un stage afin de valider cette formation. (Date de stage: 5 Mai 2021 au 4 août 2021).
                                     </br>
                                     D'ici la fin de cette formation, j'aurais vu: </p>
                                     <p class="d-flex justify-content-center align-items-center  ">(Suivez mon avancée = &#x2611; )</p>
@@ -518,9 +521,9 @@
             <div class="row">
 
             <div class="col-lg-8 mx-auto">
-                    <form action="" class="contact-form"> <!--balise pour indiquer le formulaire-->
+                    <form class="contact-form" method="POST" >  <!--balise pour indiquer le formulaire-->
                         <div class="form-group shadowblock">
-                                <label for="name" class="d-none ">Téléphone</label> 
+                                <label for="name" class="d-none ">Nom</label> 
                                 <input type="text" name="name" id="Nom" placeholder="Nom" class="form-control">
                         </div>
                             
@@ -534,8 +537,13 @@
                             <input type="phone" name="phone" id="phone" placeholder="Téléphone" class="form-control">
                         </div>
 
+                        <div class="form-group shadowblock">
+                            <label for="Subject" class="d-none">Sujet</label> 
+                            <input type="Subject" name="Subject" id="Subject" placeholder="Sujet" class="form-control">
+                        </div>
+
                         <label for="message"></label>
-                        <textarea name="message" id="message" cols="60" rows="10" placeholder="La partie contact n'est pas encore fonctionnelle mais vous pouvez toujours me contacter en cliquant sur 'Envoyer Mail' :) " class="form-control shadowblock"></textarea>
+                        <textarea name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message " class="form-control shadowblock"></textarea>
             <!--le block du texte se réduit rapidement a partir d'une certaine zone à régler-->
             <!--le block du texte se réduit rapidement a partir d'une certaine zone à régler-->
             <!--le block du texte se réduit rapidement a partir d'une certaine zone à régler-->
@@ -543,9 +551,8 @@
 
 
                         <div class="text-center ">
-                            <button class="buttonContact  ">Envoyer</button>
+                            <button class="buttonContact">Envoyer</button>
                         </div>
-
 
                     
                     </form>
@@ -553,12 +560,7 @@
             </div>
 
             <!--envoyer un mail -->
-            <a  class="envoyermail" href="mailto:smaga.michael@bbox.fr">Envoyer mail</a>
-
-
-
-
-
+            <a  class="envoyermail" href="mailto:smaga.michael@bbox.fr">Où envoyer moi en Mail directement depuis votre boîte mail</a>
 
                 <br/><br/><br/>
             </div>
@@ -601,13 +603,77 @@
             <div class="container">
                 <small class="m-0">Copyright &copy; Smaga Michaël 2020 </small>
             </div>
-
         </div>
 
 
+        <?php
+        
+        if (isset($_POST) && !empty($_POST)){
+        //si le champs est rempli et différent de vide 
 
+            $to    = "smaga.michael@bbox.fr";
 
+            
+            // adresse MAIL OVH liée à l’hébergement.
+            $from  = $_POST["email"];
+            ini_set("SMTP", "smtp.smaga-michael.fr");   // Pour les hébergements mutualisés Windows de OVH
 
+            // *** Laisser tel quel
+            $JOUR  = date("Y-m-d");
+            $HEURE = date("H:i");
+
+            
+
+            $Subject = $_POST['Subject'];
+
+            $mail_Data = "";
+
+            $mail_Data .= "<html> \n";
+
+                $mail_Data .= "<head> \n";
+                    $mail_Data .= "<title> Demande de projet </title> \n";
+                $mail_Data .= "</head> \n";
+
+                $mail_Data .= "<body> \n";
+                    $mail_Data .= '<b>'.$Subject.'</b> <br>';
+                    $mail_Data .= "<br> \n";
+                    $mail_Data .= $_POST["message"].'<br>';
+                    $mail_Data .= "<br> \n";
+                    $mail_Data .= ''.$_POST['name'].': '.$_POST["phone"].'<br>';
+                $mail_Data .= "</body> \n";
+
+            $mail_Data .= "</HTML> \n";
+
+            
+
+            $headers  = "MIME-Version: 1.0 \n";
+
+            $headers .= "Content-type: text/html; charset=iso-8859-1 \n";
+
+            $headers .= "From: $from  \n";
+
+            $headers .= "Disposition-Notification-To: $from  \n";
+
+            
+
+            // Message de Priorité haute
+            // -------------------------
+
+            $headers .= "X-Priority: 1  \n";
+            $headers .= "X-MSMail-Priority: High \n";
+            
+
+            
+
+            $CR_Mail = TRUE;
+            $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
+
+           
+        } 
+        
+           ?>
+
+ 
 
 <!-- scripts -->
     <script src="extension/particles/particles.js"></script>
@@ -616,6 +682,7 @@
     <script src="extension/jquery-3.5.1.min.js"></script>
     <script src="extension/bootstrap.bundle.min.js" ></script>
     <script src="script.js"></script>
+
 </body>
 
 

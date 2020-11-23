@@ -55,9 +55,9 @@ button{
     color: cornsilk;
 }
 
-img{
-  height: 90px;
-  width: 90px;
+.magasine img{
+  height: 60px;
+  width: auto;
   border: 3px solid black}
 
 
