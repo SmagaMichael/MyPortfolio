@@ -4,8 +4,14 @@ pb-4 = padding-bottom:4em */
 body{
 font-family: 'Montserrat', sans-serif;}
 
+.MessageSuccess{
+    color: white;
+    position: absolute;
+}
+
+
 .page{
-background: linear-gradient(#000000, #9198e5);
+background: linear-gradient(#000000, #89a8ff);
 }
 
 
@@ -51,7 +57,7 @@ text-transform: uppercase;}
                                  /* SEPARATEUR */
 .bg-portfolio p{
     font-size: 1.5rem;
-color:white}
+    color:white}
                 
 
  .separator .line{
@@ -134,7 +140,9 @@ color:white}
 .carousel-control-next, .carousel-control-prev{
     background-color: rgb(37, 28, 28);
     position: absolute;
-    width: 5% !important;}
+    width: 5% !important;
+    border-color: red;
+}
 
 .carousel-control-next{
     background-color: #7988a0;
@@ -200,7 +208,7 @@ color:white}
 
 .bg-project h2{
 
-    font-size: 1gitrem;
+    font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -233,18 +241,13 @@ color:white}
 }
 
 
-
-
-
-
                 /* PARTIE CONTACT */
-#CONTACT{
-    color: ;
-}
-                
-.contact{
-    background-color: transparent;
-    margin-top: 30px;}
+   
+
+ #CONTACT{
+    padding-top: 60px;
+    color: rgb(216, 10, 10);
+    } 
 
 .contact-form .form-control{
     border:0;
@@ -254,18 +257,27 @@ color:white}
      box-shadow: none;}
 
 .buttonContact{
-    background-color: transparent;
-}
-
-.envoyermail{
-    text-transform: uppercase;
-}
-
-.buttonContact{
     margin: 25px 0;
     padding: 5px 5px;
     border-radius: 5px;
+    background-color: transparent;
 }
+
+.divenvoyermail a{
+    color: black !important;
+    text-decoration: none !important;
+    
+}
+
+.envoyermail{
+    color: black !important;
+    text-decoration: none !important;
+    
+}
+
+
+
+
 
 
                 /* FOOTER*/

@@ -22,8 +22,21 @@
 </head>
 
 
-
 <body>
+    <?php      
+                                
+        if(!empty($_POST)){ // on vérifie que le formulaire est soumis 
+            header('Location: index.php?success=1#CONTACT');
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
+            $Subject = $_POST['Subject'];
+            $message = $_POST['message'];
+
+
+            
+        }
+    ?>
 
 
 
@@ -58,15 +71,14 @@
         </div>
     </nav>
 
-
     <div class="page">
         <div id="particles-js" ></div> <!-- particles.js container -->
 
 
                                     <!-- Partie PORTFOLIO-->
-   <!-- si bg portfolio relative => pointer event ne fonctionne pas mais particules derriere avatar
+        <!-- si bg portfolio relative => pointer event ne fonctionne pas mais particules derriere avatar
         si bg portfolio absolute => pointer fonctionne mais particules devant avatar-->
-        <div class=" container bg-portfolio pointer-events: auto ">
+        <div class=" container bg-portfolio pointer-events: auto mb-5">
             <div class="container text-center fondTitle ">
                 <br><br>
                 <img width="240" src="img/avatarb.png" alt="Smaga Michaël">
@@ -79,25 +91,23 @@
                 </div>
                 <p>développeur web</p>
             </div>
-        </div>
+        </div><br><br>
+
         
 
-                                            <!--A PROPOS -->
-        <div class="bg-about">
-        <div class="container ">
-
-            <div  id="APROPOS" class="mt-2 mb-2 separator d-flex justify-content-center align-items-center">
-                <div class="line"></div>
-                <i class="fas fa-id-card-alt fa-2x mx-2"></i> 
-                <h2>A propos</h2>
-                <i class="fas fa-id-card-alt fa-2x mx-2"></i> 
-                <div class="line"></div>
+                                            
+        <div class="bg-about"><!--A PROPOS -->
+            <div class="container ">
+                <div  id="APROPOS" class="mt-2 mb-2 separator d-flex justify-content-center align-items-center mb-5">
+                    <div class="line"></div>
+                    <i class="fas fa-id-card-alt fa-2x mx-2"></i> 
+                    <h2>A propos</h2>
+                    <i class="fas fa-id-card-alt fa-2x mx-2"></i> 
+                    <div class="line"></div>
+                </div>
             </div>
-        </div>
 
-
-
-                            <!--Carousel -->
+            <!--Carousel -->
             <div class="container ">
                     
                 <!--Début carousel-->
@@ -126,7 +136,7 @@
                                         <li class="puceOk">html </li>
                                         <li class="puceOk">css </li>
                                         <li>java</li>
-                                        <li>PHP</li>
+                                        <li class="puceOk">PHP</li>
                                         <li class="puceOk">JavaScript  </li>
                                         <li>UML</li>
                                     </ul>
@@ -227,11 +237,9 @@
             <!--Afficher CV-->
             <div class="text-center buttonCV">
                 <a href="#" class="btn btn-lg btn-outline-light" onClick="window.open('doc/CV.pdf');">
-                    <i class="fas fa-download"></i>Voir mon CV</a>  
+                <i class="fas fa-download"></i>Voir mon CV</a>  
             </div>
-            <br>
-            <br>
-        </div> <br><br>
+        </div><!--FIN A PROPOS -->
 
 
                                         <!-- Partie PROJET-->
@@ -243,7 +251,7 @@
                     <div class="line"></div>
                     <!--my-4 = margin sur l'axe Y de 4-->
                     <i class="fas fa-folder-open fa-4x mx-4"></i>                 
-                        <div class="line"></div>
+                    <div class="line"></div>
                 </div>
 
 
@@ -343,184 +351,176 @@
 
                 </div> <!--Fin de la div Row-->
 
-    <!--PARTIE MODAL -->
-    <!--Modal 1-->
-                <div class="modal fade" id="project-1">
-                    <div class="modal-dialog modal-xl"> 
-                        <div class="modal-content hauteurModal">
+                <div><!--PARTIE MODAL -->     
+                    <!--Modal 1-->      
+                    <div class="modal fade" id="project-1">
+                        <div class="modal-dialog modal-xl"> 
+                            <div class="modal-content hauteurModal">
 
-                            <div class="modal-header">
-                                <h5 class="modal-title">Jeu taquin : Aperture Science</h5>
-                                <button class="close" data-dismiss="modal">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Jeu taquin : Aperture Science</h5>
+                                    <button class="close" data-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
 
-                            <div class="modal-body">
-                                <img width="100%" src="projet/Exo_Jeu_taquin/img/Aperture Taquin.PNG" alt="">
-                            </div>
+                                <div class="modal-body">
+                                    <img width="100%" src="projet/Exo_Jeu_taquin/img/Aperture Taquin.PNG" alt="">
+                                </div>
 
-                            <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                <a href="projet/Exo_Jeu_taquin/index.html" 
-                                    target="_blank" class="btn btn-primary">Voir la maquette</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-    <!--Modal Project 2-->
-                <div class="modal fade" id="project-2">
-                    <div class="modal-dialog modal-xl"> 
-                        <div class="modal-content hauteurModal">
-
-                            <div class="modal-header">
-                                <h5 class="modal-title">Projet Insta</h5>
-                                <button class="close" data-dismiss="modal">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-
-                            <div class="modal-body">
-                                <img width="100%" src="projet/Exo_Instamanga/img/InstaManga.PNG" alt="">
-                            </div>
-
-                            <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                <a href="projet/Exo_Instamanga/index.html" 
-                                    target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    <a href="projet/Exo_Jeu_taquin/index.html" 
+                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!--Modal 2-->
+                    <div class="modal fade" id="project-2">
+                        <div class="modal-dialog modal-xl"> 
+                            <div class="modal-content hauteurModal">
 
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Projet Insta</h5>
+                                    <button class="close" data-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
 
-    <!--Modal 3-->
+                                <div class="modal-body">
+                                    <img width="100%" src="projet/Exo_Instamanga/img/InstaManga.PNG" alt="">
+                                </div>
 
-                <div class="modal fade" id="project-3">
-                    <div class="modal-dialog modal-xl"> 
-                        <div class="modal-content hauteurModal">
-
-                            <div class="modal-header">
-                                <h5 class="modal-title">Liste de noël de Fiorella</h5>
-                                <button class="close" data-dismiss="modal">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-
-                            <div class="modal-body">
-                                <img width="100%" src="projet/Exo_liste_de_Fiorella/img/liste-fiorella.PNG" alt="">
-                            </div>
-
-                            <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                <a href="projet/Exo_liste_de_Fiorella/index.html" 
-                                    target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    <a href="projet/Exo_Instamanga/index.html" 
+                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-    <!--Modal 4-->
+                    <!--Modal 3-->
+                    <div class="modal fade" id="project-3">
+                        <div class="modal-dialog modal-xl"> 
+                            <div class="modal-content hauteurModal">
 
-                <div class="modal fade" id="project-4">
-                    <div class="modal-dialog modal-xl"> 
-                        <div class="modal-content hauteurModal">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Liste de noël de Fiorella</h5>
+                                    <button class="close" data-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
 
-                            <div class="modal-header">
-                                <h5 class="modal-title">nom du projet</h5>
-                                <button class="close" data-dismiss="modal">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
+                                <div class="modal-body">
+                                    <img width="100%" src="projet/Exo_liste_de_Fiorella/img/liste-fiorella.PNG" alt="">
+                                </div>
 
-                            <div class="modal-body">
-                                <img width="100%" src="" alt="">
-                            </div>
-
-                            <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                <a href="" 
-                                    target="_blank" class="btn btn-primary">Voir la maquette</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    <!--Modal 5-->
-
-                <div class="modal fade" id="project-5">
-                    <div class="modal-dialog modal-xl"> 
-                        <div class="modal-content hauteurModal">
-
-                            <div class="modal-header">
-                                <h5 class="modal-title">nom du projet</h5>
-                                <button class="close" data-dismiss="modal">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-
-                            <div class="modal-body">
-                                <img width="100%" src="" alt="">
-                            </div>
-
-                            <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                <a href="" 
-                                    target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    <a href="projet/Exo_liste_de_Fiorella/index.html" 
+                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-    <!--Modal 6-->
-                <div class="modal fade" id="project-6">
-                    <div class="modal-dialog modal-xl"> 
-                        <div class="modal-content hauteurModal">
+                    <!--Modal 4-->
+                    <div class="modal fade" id="project-4">
+                        <div class="modal-dialog modal-xl"> 
+                            <div class="modal-content hauteurModal">
 
-                            <div class="modal-header">
-                                <h5 class="modal-title">nom du projet</h5>
-                                <button class="close" data-dismiss="modal">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
+                                <div class="modal-header">
+                                    <h5 class="modal-title">nom du projet</h5>
+                                    <button class="close" data-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
 
-                            <div class="modal-body">
-                                <img width="100%" src="" alt="">
-                            </div>
+                                <div class="modal-body">
+                                    <img width="100%" src="" alt="">
+                                </div>
 
-                            <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                <a href="" 
-                                    target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    <a href="" 
+                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!--Modal 5-->
+                    <div class="modal fade" id="project-5">
+                        <div class="modal-dialog modal-xl"> 
+                            <div class="modal-content hauteurModal">
 
+                                <div class="modal-header">
+                                    <h5 class="modal-title">nom du projet</h5>
+                                    <button class="close" data-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img width="100%" src="" alt="">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    <a href="" 
+                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Modal 6-->
+                    <div class="modal fade" id="project-6">
+                        <div class="modal-dialog modal-xl"> 
+                            <div class="modal-content hauteurModal">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title">nom du projet</h5>
+                                    <button class="close" data-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img width="100%" src="" alt="">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    <a href="" 
+                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!--Fin PARTIE MODAL -->                      
             </div>
-        </div> <br/><br/><br/>
+        </div> <br>
 
 
                                         <!-- Partie CONTACT-->
         <div class="contact">
-
-            <div class="container text-center">
-
-                                    <!--Separateur-->
-                <div class="my-4 separator d-flex justify-content-center align-items-center">
+        
+            <div class="container">    
+                <div  class=" mt-2 mb-2  separator d-flex justify-content-center align-items-center"><!--Separateur-->
                     <div class="line"></div>
-                    <h1 id="CONTACT">Me contacter</h1>
+                    <h2 id="CONTACT">Me contacter</h2>
                     <!--my-4 = margin sur l'axe Y de 4-->
                     <i class="fas fa-mail-bulk fa-2x mx-2"></i>
                     <div class="line"></div>
                 </div>
-
-
-                
-                
-                                        <!--formulaire  contact-->
-
-            <div class="row">
-
-            <div class="col-lg-8 mx-auto">
+                <?php
+                if(isset($_GET['success'])){
+                    echo '<p class="MessageSuccess">Votre message a bien été envoyé</p>';
+                    }
+                ?>
+                                       
+                <div class="col-lg-8 mx-auto "> <!--formulaire  contact-->
+                     
                     <form class="contact-form" method="POST" >  <!--balise pour indiquer le formulaire-->
                         <div class="form-group shadowblock">
                                 <label for="name" class="d-none ">Nom</label> 
@@ -544,58 +544,50 @@
 
                         <label for="message"></label>
                         <textarea name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message " class="form-control shadowblock"></textarea>
-            <!--le block du texte se réduit rapidement a partir d'une certaine zone à régler-->
-            <!--le block du texte se réduit rapidement a partir d'une certaine zone à régler-->
-            <!--le block du texte se réduit rapidement a partir d'une certaine zone à régler-->
-            <!--le block du texte se réduit rapidement a partir d'une certaine zone à régler-->
-
-
+            
                         <div class="text-center ">
                             <button class="buttonContact">Envoyer</button>
                         </div>
-
-                    
                     </form>
                 </div>
-            </div>
-
-            <!--envoyer un mail -->
-            <a  class="envoyermail" href="mailto:smaga.michael@bbox.fr">Où envoyer moi en Mail directement depuis votre boîte mail</a>
-
-                <br/><br/><br/>
+            
+                <div class="divenvoyermail">
+                    <!--envoyer un mail -->
+                    <a class="envoyermail" href="mailto:smaga.michael@bbox.fr">Où envoyer moi en Mail directement depuis votre boîte mail</a>
+                </div>
+                <br/><br/>
             </div>
         </div>
-    </div>
-
+    </div>                    
 
                                             <!--FOOTER-->
 
-        <footer class="bg-dark">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4"><h3>Adresse</h3>
-                            <p>- Nord-Pas-De-Clais -<br> - - - - - - - - -
+    <footer class="bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4"><h3>Adresse</h3>
+                        <p>- Nord-Pas-De-Clais -<br> - - - - - - - - -
 
-                            </p>
-                            </div>
-                            <div class="col-lg-4"><h3>Réseau sociaux</h3>
-                                
+                        </p>
+                        </div>
+                        <div class="col-lg-4"><h3>Réseau sociaux</h3>
                             
-                                <a class="btn btn-lg btn-outline-light" href="https://www.linkedin.com/in/michael-smaga-88667a136/" target="_blank">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
+                        
+                            <a class="btn btn-lg btn-outline-light" href="https://www.linkedin.com/in/michael-smaga-88667a136/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
 
-                                <a class="btn btn-lg btn-outline-light" href="https://github.com/SmagaMichael" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            
-                            </div>
+                            <a class="btn btn-lg btn-outline-light" href="https://github.com/SmagaMichael" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                        </div>
 
-                            <div class="col-lg-4"><h3>A propos</h3>
-                                <p>Merci de votre visite &#128522; </p>
-                            </div>
+                        <div class="col-lg-4"><h3>A propos</h3>
+                            <p>Merci de votre visite &#128522; </p>
                         </div>
                     </div>
+                </div>
         </footer>
         
         
@@ -607,7 +599,7 @@
 
 
         <?php
-        
+  
         if (isset($_POST) && !empty($_POST)){
         //si le champs est rempli et différent de vide 
 
@@ -625,6 +617,8 @@
             
 
             $Subject = $_POST['Subject'];
+            // $Subject .='Content-Type: text/html; charset="utf-8"'." ";
+            // $Subject .='Content-Transfer-Encoding: 8bit';
 
             $mail_Data = "";
 
@@ -644,33 +638,32 @@
 
             $mail_Data .= "</HTML> \n";
 
-            
-
             $headers  = "MIME-Version: 1.0 \n";
-
-            $headers .= "Content-type: text/html; charset=iso-8859-1 \n";
-
             $headers .= "From: $from  \n";
+            $headers .='Content-Type: text/html; charset="utf-8"'." ";
+            // ici on envoie le mail au format texte encodé en UTF-8
+            // $headers .= "Content-type: text/html; charset=iso-8859-1 \n";
 
-            $headers .= "Disposition-Notification-To: $from  \n";
+            $headers .='Content-Transfer-Encoding: 8bit';
+            // ici on précise qu'il y a des caractères accentués
 
-            
 
             // Message de Priorité haute
-            // -------------------------
-
             $headers .= "X-Priority: 1  \n";
             $headers .= "X-MSMail-Priority: High \n";
-            
-
             
 
             $CR_Mail = TRUE;
             $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
-           
+
+            // if ($CR_Mail === FALSE){
+            //     echo " ### CR_Mail=$CR_Mail - Erreur envoi mail <br> \n";
+            // }else{
+            //     echo " *** CR_Mail=$CR_Mail - Mail envoyé<br> \n";
+            // }
         } 
-        
+       
            ?>
 
  
