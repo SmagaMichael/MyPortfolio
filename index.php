@@ -267,7 +267,7 @@
                                 </div>
                             </a>
                             <div class=" baseprojet projet3">
-                                <img width="100%"  class="image " src="projet/Exo_Jeu_taquin/img/Aperture Taquin.PNG" alt="">
+                                <img width="100%"  class="image " src="img/imgModalProject/Aperture Taquin.PNG" alt="">
                             </div>
                         </div>
                     </div>
@@ -281,7 +281,7 @@
                                 </div>
                             </a>
                             <div class=" baseprojet projet2">
-                                <img width="100%" class="image " src="projet/Exo_Instamanga/img/InstaManga.PNG">
+                                <img width="100%" class="image " src="img/imgModalProject/InstaManga.PNG">
                             </div>
                         </div>
                     </div>
@@ -296,7 +296,7 @@
                                 </div>
                             </a>
                             <div class=" baseprojet projet3">
-                                <img width="100%" class="image " src="projet/Exo_liste_de_Fiorella/img/liste-fiorella.PNG">
+                                <img width="100%" class="image " src="img/imgModalProject/liste-fiorella.PNG">
                             </div>
                         </div>
                     </div>
@@ -311,9 +311,7 @@
                                 </div>
                             </a>
                             <div class=" baseprojet projet4">
-                                <p> PROJET à venir</p>
-                                <br>
-                                <p class="sousP">(Portfolio d'une illustratrice)</p>
+                            <img width="100%" class="image " src="img/imgModalProject/Amalshia.PNG">
                             </div>
                         </div>
                     </div>
@@ -365,7 +363,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="projet/Exo_Jeu_taquin/img/Aperture Taquin.PNG" alt="">
+                                    <img width="100%" src="img/imgModalProject/Aperture Taquin.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -389,7 +387,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="projet/Exo_Instamanga/img/InstaManga.PNG" alt="">
+                                    <img width="100%" src="img/imgModalProject/InstaManga.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -413,7 +411,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="projet/Exo_liste_de_Fiorella/img/liste-fiorella.PNG" alt="">
+                                    <img width="100%" src="img/imgModalProject/liste-fiorella.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -430,19 +428,19 @@
                             <div class="modal-content hauteurModal">
 
                                 <div class="modal-header">
-                                    <h5 class="modal-title">nom du projet</h5>
+                                    <h5 class="modal-title">Portfolio d'une illustratrice : Amalshia </h5>
                                     <button class="close" data-dismiss="modal">
                                         <i class="fas fa-times"></i>
                                     </button>
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="" alt="">
+                                    <img width="100%" src="img/imgModalProject/Amalshia.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="" 
+                                    <a href="projet/Portfolio_Amalshia/Page/Page0_Accueil/index.php" 
                                         target="_blank" class="btn btn-primary">Voir la maquette</a>
                                 </div>
                             </div>
@@ -506,16 +504,17 @@
         <div class="contact">
         
             <div class="container">    
-                <div  class=" mt-2 mb-2  separator d-flex justify-content-center align-items-center"><!--Separateur-->
+                <div id="CONTACT"  class=" mt-2 mb-2  separator d-flex justify-content-center align-items-center"><!--Separateur-->
                     <div class="line"></div>
-                    <h2 id="CONTACT">Me contacter</h2>
+                    <h2 >Me contacter</h2>
                     <!--my-4 = margin sur l'axe Y de 4-->
                     <i class="fas fa-mail-bulk fa-2x mx-2"></i>
                     <div class="line"></div>
                 </div>
+
                 <?php
                 if(isset($_GET['success'])){
-                    echo '<p class="MessageSuccess">Votre message a bien été envoyé</p>';
+                    echo '<p class="MessageSuccess form-group text-center">Votre message a bien été envoyé</p><br>';
                     }
                 ?>
                                        
@@ -548,13 +547,15 @@
                         <div class="text-center ">
                             <button class="buttonContact">Envoyer</button>
                         </div>
+                        <div  class="form-group text-center">
+                            <a class="envoyermail" href="mailto:smaga.michael@bbox.fr" >Ou si vous préférez envoyez moi un Mail directement depuis votre boîte mail en cliquant ici</a>
+                        </div>
                     </form>
                 </div>
             
-                <div class="divenvoyermail">
-                    <!--envoyer un mail -->
-                    <a class="envoyermail" href="mailto:smaga.michael@bbox.fr">Où envoyer moi en Mail directement depuis votre boîte mail</a>
-                </div>
+         
+                    
+              
                 <br/><br/>
             </div>
         </div>

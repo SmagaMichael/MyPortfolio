@@ -4,10 +4,7 @@ pb-4 = padding-bottom:4em */
 body{
 font-family: 'Montserrat', sans-serif;}
 
-.MessageSuccess{
-    color: white;
-    position: absolute;
-}
+
 
 
 .page{
@@ -208,11 +205,10 @@ text-transform: uppercase;}
 
 .bg-project h2{
 
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    padding-top: 1rem;  
 }
 
 
@@ -234,21 +230,30 @@ text-transform: uppercase;}
 
 }
 
-
-
 .hauteurModal{
     top: 40px !important;
 }
 
 
-                /* PARTIE CONTACT */
-   
 
- #CONTACT{
+
+
+
+/* PARTIE CONTACT */
+.MessageSuccess{
+    color: white;
+}
+
+#CONTACT{
     padding-top: 60px;
-    color: rgb(216, 10, 10);
-    } 
-
+    color: rgb(2, 1, 1);
+} 
+.contact h2{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 .contact-form .form-control{
     border:0;
     border-bottom: 1px solid black;}
@@ -263,16 +268,12 @@ text-transform: uppercase;}
     background-color: transparent;
 }
 
-.divenvoyermail a{
-    color: black !important;
-    text-decoration: none !important;
-    
-}
+
 
 .envoyermail{
-    color: black !important;
-    text-decoration: none !important;
-    
+    color: black ;
+    text-decoration: none ;
+    width: 100%;
 }
 
 
