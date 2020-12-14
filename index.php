@@ -32,44 +32,69 @@
             $phone = $_POST['phone'];
             $Subject = $_POST['Subject'];
             $message = $_POST['message'];
-
-
-            
         }
     ?>
 
 
 
                         <!--BARRE DE NAVIGATION BOOTSTRAP-->
-    <nav class="navbar navbar-expand-lg navbar-dark  pt-2 pb-2">
-        <div class="container">
-            <a class="navbar-brand" href="#">Smaga Michaël</a>
-            <!-- collapse = ouvrir/fermé le menu burger-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+     <nav class="sidebar navbar-expand-lg navbar-dark  pt-2 pb-2">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul>
+                <li>
+                     <h1>Smaga <span class="name"><strong>Michaël</strong></span></h1>
+                </li>
 
+                <li>
+                    <a href="#">
+                    <i class="fas fa-arrow-circle-up"></i>
+                        <button class="buttonSidebar">haut de page</button>
+                    </a>
+                </li>
 
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#APROPOS">A propos</a>
-                    </li>
+                <li>
+                    <a href="#APROPOS">
+                        <i class="fa fa-user "></i>
+                        <button class="buttonSidebar">A propos</button>
+                    </a>
+                </li>
+                
 
+                <li>
+                    <div class="dropdown">
                     
+                        <a href="#PROJECT"><i class="far fa-folder-open"></i><button class=" buttonSidebar " type="button">Mes projets</button></a>
+                        <button type="button" class="buttonSidebar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" ></button>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#PROJECT">Projets</a>
-                    </li>
+                        <ul class="sub-menu">
+                            <div class="dropdown-menu dropdown-menu-right" >
+                                <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Jeu taquin</button></a></li>
+                                <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Style Insta'</button></a></li>
+                                <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Noel</button></a></li>
+                                <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Illustratrice</button></a></li>
+                            </div>
+                        </ul>             
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#CONTACT">Contact</a>
-                    </li>
-                </ul>
-            </div>
+                    </div>  
+                </li>
+
+                <li>
+                    <a href="#CONTACT">
+                    <i class="fas fa-at"></i>
+                        <button class="buttonSidebar">Contact</button>
+                    </a>
+                <span class="hover"></span>
+                </li>
+                
+            </ul>
         </div>
-    </nav>
+    </nav> 
+
 
     <div class="page">
         <div id="particles-js" ></div> <!-- particles.js container -->
@@ -168,8 +193,8 @@
                                 <div class="col-lg-2 col-md-6">
                                     <ul>
                                         <li class="titleli">Base de données:</li>
-                                        <li>SQL</li>
-                                        <li>MySQL</li>
+                                        <li class="puceOk">SQL</li>
+                                        <li></i>MySQL</li>
                                         <li>MongoDB</li>
                                     </ul>
                                 </div>
@@ -263,7 +288,7 @@
                         <div class="position-relative"> 
                             <a href="#" data-toggle="modal" data-target="#project-1">
                                 <div class="filter"> <!--Calque sur image-->
-                                    <img src="img/star2.gif" alt="">
+                                    <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet3">
@@ -277,7 +302,7 @@
                         <div class="position-relative"> 
                             <a href="#" data-toggle="modal" data-target="#project-2">
                                 <div class="filter"> <!--Calque sur image-->
-                                    <img src="img/star2.gif" alt="">
+                                    <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet2">
@@ -292,7 +317,7 @@
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-3">
                                 <div class="filter"> <!--Calque sur image-->
-                                    <img src="img/star2.gif" alt="">
+                                    <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet3">
@@ -307,7 +332,7 @@
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-4">
                                 <div class="filter"> <!--Calque sur image-->
-                                    <img src="img/star2.gif" alt="">
+                                    <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet4">
@@ -323,10 +348,10 @@
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-5">
                                 <div class="filter"> <!--Calque sur image-->
-                                    <img src="img/star2.gif" alt="">
+                                    <img src="img/star.gif" alt="">
                                 </div>
                             </a>
-                            <div class=" baseprojet projet5">
+                            <div class=" baseprojetVide projet5">
                                 <p> PROJET à venir</p>
                             </div>
                         </div>
@@ -338,10 +363,10 @@
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-6">
                                 <div class="filter"> <!--Calque sur image-->
-                                    <img src="img/star2.gif" alt="">
+                                    <img src="img/star.gif" alt="">
                                 </div>
                             </a>
-                            <div class=" baseprojet projet6">
+                            <div class=" baseprojetVide projet6">
                                 <p> PROJET à venir</p>
                             </div>
                         </div>
@@ -369,7 +394,7 @@
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
                                     <a href="projet/Exo_Jeu_taquin/index.html" 
-                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                        target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
@@ -393,7 +418,7 @@
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
                                     <a href="projet/Exo_Instamanga/index.html" 
-                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                        target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
@@ -417,7 +442,7 @@
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
                                     <a href="projet/Exo_liste_de_Fiorella/index.html" 
-                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                        target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
@@ -440,8 +465,8 @@
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="projet/Portfolio_Amalshia/Page/Page0_Accueil/index.php" 
-                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                    <a href="projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php" 
+                                        target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
@@ -465,7 +490,7 @@
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
                                     <a href="" 
-                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                        target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
@@ -489,7 +514,7 @@
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
                                     <a href="" 
-                                        target="_blank" class="btn btn-primary">Voir la maquette</a>
+                                        target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
@@ -563,7 +588,7 @@
 
                                             <!--FOOTER-->
 
-    <footer class="bg-dark">
+    <footer >
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4"><h3>Adresse</h3>

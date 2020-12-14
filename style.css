@@ -1,56 +1,202 @@
-/*ml-auto = margin left:auto
-pt-4 = padding-top:4em
-pb-4 = padding-bottom:4em */
+
 body{
-font-family: 'Montserrat', sans-serif;}
+font-family: 'Montserrat', sans-serif;
+display: flex;
+flex-wrap: wrap;}
+
+/* Nom et prénom */
+.sidebar h1{
+    color:#FFF;
+    font:26px Open Sans;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.sidebar .name{
+    color:rgb(179, 127, 67);
+}
+
+/* Ensemble barre de navigation  */
+.sidebar{
+  width:15%;
+  height:100%;
+  position:fixed ;
+  z-index:2000; 
+  background:url("img/aside.jpg");
+  border-right:10px solid #aa7423;}
+
+.buttonSidebar{
+    width: 85%;
+    height: 30px;
+    font: 20px Oswald;
+    color:rgb(179, 127, 67);
+    text-transform: uppercase;
+    background-color: black;
+    border: 2px solid rgb(179, 127, 67);
+    border-radius: 15px;
+}
+
+/* ensemble de tout les li */
+.sidebar ul{
+    margin-top:30px;
+    padding: 5px;
+    width: 100%;}
+  
+/* tout les li de la barre de navigation  */
+.sidebar li{
+    list-style:none;
+    padding:5px 0px;
+    text-align: center;
+    }
+  
+/* couleur des logos devant les menus */
+.sidebar a{
+    color:rgb(179, 127, 67);}
+
+/* enlever la décoration sur les logo */
+.sidebar a:hover{color:rgb(179, 127, 67);}
+
+/* Pousse le titre menu de son logo */
+.sidebar .push{
+    margin-right:10px;
+}
+
+
+/* SOUS MENU */
+/* bouton pour voir les projets */
+.dropdown-toggle-split{
+    margin-left: 18px !important;
+}
+
+/* ensemble des projets */
+.dropdown-menu{
+    background-color: black !important;
+    border: 2px solid rgb(179, 127, 67) !important;
+    border-radius: 15px !important;
+    width: 100%;
+}
+
+/* bouton des projets */
+.buttonSidebarSubmenu{
+    width: 100%;
+    height: 30px;
+    font: 20px Oswald;
+    color:rgb(179, 127, 67);
+    text-transform: uppercase;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.dropdown-item{
+    background-color: black !important;
+    padding: 0px;
+}
+.dropdown{
+    height: 60px !important;
+
+}
+.sub-menu li a{
+    padding:0;
+    width: 100%;
+}
+/* Fin du css pour le sous menu  */
+
+
+
+
+
+
+
+/* Barre nav responsive */
+@media (max-width: 1460px ){
+
+footer{width: 100% !important;; 
+         margin-left: 0 !important;}
+
+.page{width: 100% !important; 
+        margin-left: 0 !important;}
+
+.bg-copyright{width: 100% !important; 
+        margin-left: 0 !important;}
+.sidebar{
+    width:100%;
+    height:auto;
+    display: flex;
+    
+    z-index:2000; 
+    background-color: black !important;
+    background: none;
+    border:2px solid #aa7423;}
+
+.sidebar h1 {
+    color: #FFF;
+    font: 26px Open Sans;
+    margin-bottom: 0px !important;
+    text-align: center;
+}
+
+.sidebar ul {
+  text-align: center;
+    width: 100%;
+
+
+}
+
+}/* fin de la Barre nav responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 .page{
-background: linear-gradient(#000000, #89a8ff);
+/* background: linear-gradient(#000000, #89a8ff);  */
+background-image: url(img/night.jpg);
+background-size:100% 100%;
+background-repeat: no-repeat;
+position: relative;
+width: 85%;
+margin-left: 15%;
 }
 
 
-
-                        /* BARRE DE NAVIGATION  */
-
-.navbar{
-    border-bottom: 3px solid white;
-    background-color: black !important;
-    /* */
-    z-index: 9999;
-    position: fixed !important;
-    top: 0 ;
-    width: 100%;
-}
-
-.navbar-brand{ font-size: 1.75em;
-font-weight: 700;
-text-transform: uppercase;}
-
-
-#navbarNav .nav-link{
-    color: white;
-    font-weight: 700;
-    padding: 0 20px;
-    padding: 5px 10px;}
-
-
-#navbarNav .nav-link:hover{
-    color: #000000;
-    background: white;
-    border-radius: 15px;}
+          
 
 
 
-
-
-
-
-
-
-    
                                  /* SEPARATEUR */
 .bg-portfolio p{
     font-size: 1.5rem;
@@ -65,17 +211,7 @@ text-transform: uppercase;}
     margin: 5px 5px;}
                                 
 
-
-
                                  /* PARTIE PORTFOLIO */
-
-.codegif{
-    height: 123px;
-    width: 100%;
-}
-
-
-
 
 .bg-portfolio{
     background: transparent;
@@ -93,7 +229,7 @@ text-transform: uppercase;}
 
 
 .backgroundApropos{
-    background-color:#292b41;
+    background-color:#000000;
 }
     
 
@@ -135,18 +271,16 @@ text-transform: uppercase;}
 
 
 .carousel-control-next, .carousel-control-prev{
-    background-color: rgb(37, 28, 28);
     position: absolute;
     width: 5% !important;
-    border-color: red;
 }
 
 .carousel-control-next{
-    background-color: #7988a0;
+    background-color: #aa7423;
     right: 0px!important;}
 
 .carousel-control-prev{
-    background-color: #7988a0;
+    background-color: #aa7423;
     left: 0px!important;}
 
 
@@ -189,16 +323,27 @@ text-transform: uppercase;}
     object-fit: cover;
     flex-wrap: wrap;
 }
+.baseprojetVide{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #aa7423;
+    border-radius: 15px;
+    object-fit: cover;
+    flex-wrap: wrap;
+    background-color: black;;
+}
 
-
-.baseprojet  p{
-
+.baseprojetVide  p{
+    color: #aa7423;
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
 }
-.baseprojet  .sousP{
+.baseprojetVide  .sousP{
     font-size: 16px;
 }
 
@@ -230,9 +375,41 @@ text-transform: uppercase;}
 
 }
 
-.hauteurModal{
-    top: 40px !important;
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: rgb(0, 0, 0) !important;
+    background-clip: padding-box;
+    border: 3px solid #aa7423 !important;
+    border-radius: .3rem;
+    outline: 0;
 }
+
+.modal-title {
+    color:  #aa7423 !important;
+    margin-bottom: 0;
+    line-height: 1.5;}
+
+.fa-times:before {
+    color: #aa7423 !important;
+    content: "\f00d";
+}
+
+.btn-success{
+    color: rgb(0, 0, 0) !important;
+    background-color: #aa7423 !important;
+    border-color:  #aa7423 !important;
+}
+
+
+
+
 
 
 
@@ -246,8 +423,9 @@ text-transform: uppercase;}
 
 #CONTACT{
     padding-top: 60px;
-    color: rgb(2, 1, 1);
-} 
+    color: rgb(255, 255, 255);}
+
+
 .contact h2{
     font-size: 2rem;
     text-align: center;
@@ -266,12 +444,18 @@ text-transform: uppercase;}
     padding: 5px 5px;
     border-radius: 5px;
     background-color: transparent;
+    color: white;
 }
 
-
-
 .envoyermail{
-    color: black ;
+    color: rgb(255, 255, 255) ;
+    text-decoration: none ;
+    width: 100%;
+}
+
+.envoyermail:hover{
+    color: rgb(255, 255, 255) ;
+    border-bottom: 2px solid white;
     text-decoration: none ;
     width: 100%;
 }
@@ -279,20 +463,23 @@ text-transform: uppercase;}
 
 
 
-
-
                 /* FOOTER*/
 footer{
+    width: 85%;
+    margin-left: 15%;
     padding:2rem 0;
     text-align: center;
-    color: white;}
+    color:  #aa7423;
+    background-color: black;
+    border-top: 3px solid #aa7423;
+    border-bottom: 3px solid #aa7423;}
 
 
 footer h3{
     text-transform:uppercase ;}
 
 footer a{
-    color: white;}
+    color: #aa7423;}
 
 footer .btn-outline-light{
 
@@ -312,10 +499,18 @@ footer i{
 footer a:hover i{
         transform: rotate(360deg);}
 
+.fa-linkedin-in:before {
+    color: #aa7423;}
+
+.fa-github:before {
+    color: #aa7423;}
 
 .bg-copyright{
-        background-color: black;
-        color: white;}
+    width: 85%;
+    margin-left: 15%;
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid #aa7423;}
 
 
 
