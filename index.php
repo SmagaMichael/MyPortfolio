@@ -73,10 +73,10 @@
 
                         <ul class="sub-menu">
                             <div class="dropdown-menu dropdown-menu-right" >
-                                <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Jeu taquin</button></a></li>
-                                <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Style Insta'</button></a></li>
+                                <li><a class="dropdown-item" href="projet/Exo_Jeu_taquin/index.html"><button class="buttonSidebarSubmenu">Jeu taquin</button></a></li>
+                                <li><a class="dropdown-item" href="projet/Exo_Instamanga/index.html"><button class="buttonSidebarSubmenu">Style Insta'</button></a></li>
                                 <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Noel</button></a></li>
-                                <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Illustratrice</button></a></li>
+                                <li><a class="dropdown-item" href="projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php"><button class="buttonSidebarSubmenu">Illustratrice</button></a></li>
                             </div>
                         </ul>             
 
