@@ -23,23 +23,23 @@
 
 
 <body>
-    <?php      
-                                
-        if(!empty($_POST)){ // on vérifie que le formulaire est soumis 
-            header('Location: index.php?success=1#CONTACT');
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $phone = $_POST['phone'];
-            $Subject = $_POST['Subject'];
-            $message = $_POST['message'];
-        }
+    <?php
+
+    if (!empty($_POST)) { // on vérifie que le formulaire est soumis 
+        header('Location: index.php?success=1#CONTACT');
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $Subject = $_POST['Subject'];
+        $message = $_POST['message'];
+    }
     ?>
 
 
 
-                        <!--BARRE DE NAVIGATION BOOTSTRAP-->
-     <nav class="sidebar navbar-expand-lg navbar-dark  pt-2 pb-2">
-        
+    <!--BARRE DE NAVIGATION BOOTSTRAP-->
+    <nav class="sidebar navbar-expand-lg navbar-dark  pt-2 pb-2">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,12 +47,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul>
                 <li>
-                     <h1>Smaga <span class="name"><strong>Michaël</strong></span></h1>
+                    <h1>Smaga <span class="name"><strong>Michaël</strong></span></h1>
                 </li>
 
                 <li>
                     <a href="#">
-                    <i class="fas fa-arrow-circle-up"></i>
+                        <i class="fas fa-arrow-circle-up"></i>
                         <button class="buttonSidebar">haut de page</button>
                     </a>
                 </li>
@@ -63,44 +63,52 @@
                         <button class="buttonSidebar">A propos</button>
                     </a>
                 </li>
-                
+
 
                 <li>
-                    <div class="dropdown">
-                    
-                        <a href="#PROJECT"><i class="far fa-folder-open"></i><button class=" buttonSidebar " type="button">Mes projets</button></a>
-                        <button type="button" class="buttonSidebar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" ></button>
+                    <a href="#PROJECT">
+                        <i class="far fa-folder-open"></i>
+                        <button class=" buttonSidebar " type="button">Mes projets</button></a>
+                </li>
 
-                        <ul class="sub-menu">
-                            <div class="dropdown-menu dropdown-menu-right" >
-                                <li><a class="dropdown-item" href="projet/Exo_Jeu_taquin/index.html"><button class="buttonSidebarSubmenu">Jeu taquin</button></a></li>
-                                <li><a class="dropdown-item" href="projet/Exo_Instamanga/index.html"><button class="buttonSidebarSubmenu">Style Insta'</button></a></li>
-                                <li><a class="dropdown-item" href="projet/Exo_liste_de_Fiorella/index.html"><button class="buttonSidebarSubmenu">Noel</button></a></li>
-                                <li><a class="dropdown-item" href="projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php"><button class="buttonSidebarSubmenu">Illustratrice</button></a></li>
-                            </div>
-                        </ul>             
+                <li>
+                    <i class="far fa-folder-open"></i>
+                    <button type="button" class="buttonSidebar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Lien projets</button>
+                    <ul class="sub-menu">
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="projet/Exo_Jeu_taquin/index.html" target="_blank"><button class="buttonSidebarSubmenu">Jeu taquin</button></a></li>
+                            <li><a class="dropdown-item" href="https://www.egaming.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">E-Gaming</button></a></li>
+                            <li><a class="dropdown-item" href="https://www.augupex.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">Angupex</button></a></li>
+                            <li><a class="dropdown-item" href="projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php" target="_blank"><button class="buttonSidebarSubmenu">Illustratrice</button></a></li>
+                            <li><a class="dropdown-item" href="https://www.webflix.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">Webflix</button></a></li>
+                            <li><a class="dropdown-item" href="https://www.immobiliare.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">Immobiliare</button></a></li>
+                            <li><a class="dropdown-item" href="https://www.pizzaparty.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">PizzaParty</button></a></li>
 
-                    </div>  
+                        </div>
+                    </ul>
+                </li>
+
+                <li><a onClick="window.open('doc/CV.pdf');">
+                        <i class="fas fa-download"></i>
+                        <button class="buttonSidebar">Voir mon CV</button></a>
                 </li>
 
                 <li>
                     <a href="#CONTACT">
-                    <i class="fas fa-at"></i>
+                        <i class="fas fa-at"></i>
                         <button class="buttonSidebar">Contact</button>
-                    </a>
-                <span class="hover"></span>
+                    </a><!-- <span class="hover"></span> -->
                 </li>
-                
             </ul>
         </div>
-    </nav> 
+    </nav>
 
 
     <div class="page">
-        <div id="particles-js" ></div> <!-- particles.js container -->
+        <div id="particles-js"></div> <!-- particles.js container -->
 
 
-                                    <!-- Partie PORTFOLIO-->
+        <!-- Partie PORTFOLIO-->
         <!-- si bg portfolio relative => pointer event ne fonctionne pas mais particules derriere avatar
         si bg portfolio absolute => pointer fonctionne mais particules devant avatar-->
         <div class=" container bg-portfolio pointer-events: auto mb-5">
@@ -118,94 +126,97 @@
             </div>
         </div><br><br>
 
-        
 
-                                            
-        <div class="bg-about"><!--A PROPOS -->
+
+
+        <div class="bg-about">
+            <!--A PROPOS -->
             <div class="container ">
-                <div  id="APROPOS" class="mt-2 mb-2 separator d-flex justify-content-center align-items-center mb-5">
+                <div id="APROPOS" class="mt-2 mb-2 separator d-flex justify-content-center align-items-center mb-5">
                     <div class="line"></div>
-                    <i class="fas fa-id-card-alt fa-2x mx-2"></i> 
+                    <i class="fas fa-id-card-alt fa-2x mx-2"></i>
                     <h2>A propos</h2>
-                    <i class="fas fa-id-card-alt fa-2x mx-2"></i> 
+                    <i class="fas fa-id-card-alt fa-2x mx-2"></i>
                     <div class="line"></div>
                 </div>
             </div>
 
             <!--Carousel -->
             <div class="container ">
-                    
+
                 <!--Début carousel-->
                 <div id="carouselExampleControls" class="carousel slide container" data-ride="carousel" data-interval="false">
 
-                    <div class="carousel-inner backgroundApropos">  <!--Ensemble slide-->
+                    <div class="carousel-inner backgroundApropos">
+                        <!--Ensemble slide-->
 
-                        <div class="carousel-item active"><!--Page 1 activé par defaut-->
+                        <div class="carousel-item active">
+                            <!--Page 1 activé par defaut-->
 
                             <div class="row">
                                 <div class="col-lg-12 ">
-                                    
+
                                     <h3>Recherche de stage</h3>
                                     <p>Madame, Monsieur,</p>
-                    
+
                                     <p>
-                                    Etant inscrit au centre de formation M2i, à la formation : ‘’ Concepteur / Développeur d'Application’’, je suis à la recherche d’une entreprise dans ce domaine pour y effectuer un stage afin de valider cette formation. (Date de stage: 5 Mai 2021 au 4 août 2021).
-                                    </br>
-                                    D'ici la fin de cette formation, j'aurais vu: </p>
+                                        Etant inscrit au centre de formation M2i, à la formation : ‘’ Concepteur / Développeur d'Application’’, je suis à la recherche d’une entreprise dans ce domaine pour y effectuer un stage afin de valider cette formation. (Date de stage: 5 Mai 2021 au 4 août 2021).
+                                        </br>
+                                        D'ici la fin de cette formation, j'aurais vu: </p>
                                     <p class="d-flex justify-content-center align-items-center  ">(Suivez mon avancée = &#x2611; )</p>
                                 </div>
-                    
+
                                 <div class="col-lg-2 col-md-6">
                                     <ul>
                                         <li class="titleli">Différents langages:</li>
                                         <li class="puceOk">html </li>
                                         <li class="puceOk">css </li>
-                                        <li>java</li>
+                                        <li class="puceOk">java</li>
                                         <li class="puceOk">PHP</li>
-                                        <li class="puceOk">JavaScript  </li>
+                                        <li class="puceOk">JavaScript </li>
                                         <li>UML</li>
                                     </ul>
                                 </div>
-                    
-                    
+
+
                                 <div class="col-lg-2 col-md-6">
                                     <ul>
                                         <li class="titleli">Framework Java:</li>
                                         <li>Spring</li>
                                         <li>Hibernate</li>
                                         <li class="nopuce"></li>
-                                    <br>
-                                    <li class="titleli">Framework PHP:</li>
-                                    <li>Symfony</li>
+                                        <br>
+                                        <li class="titleli">Framework PHP:</li>
+                                        <li class="puceOk">Symfony</li>
                                     </ul>
                                 </div>
-        
+
                                 <div class="col-lg-2 col-md-6">
                                     <ul>
                                         <li class="titleli">Framework JavaScript:</li>
-                                        <li>Angular</li>
-                                        <li>Ionic</li>
-                                        <li >React</li>
+                                        <li class="puceOk">Angular</li>
+                                        <li class="puceOk">Ionic</li>
+                                        <li>React</li>
                                     </ul>
-                        
+
                                 </div>
-                    
+
                                 <div class="col-lg-2 col-md-6">
                                     <ul>
                                         <li class="titleli">Base de données:</li>
                                         <li class="puceOk">SQL</li>
-                                        <li></i>MySQL</li>
+                                        <li class="puceOk">MySQL</li>
                                         <li>MongoDB</li>
                                     </ul>
                                 </div>
-                    
+
                                 <div class="col-lg-2 col-md-6">
                                     <ul>
-                                    <li class="titleli">Ainsi que</li>
-                                    <li class="puceOk">Bootstrap</li>
-                                    <li class="puceOk">Jquery</li>
-                                    <li class="puceOk">git</li>
-                                    <li class="puceOk">github</li>
+                                        <li class="titleli">Ainsi que</li>
+                                        <li class="puceOk">Bootstrap</li>
+                                        <li class="puceOk">Jquery</li>
+                                        <li class="puceOk">git</li>
+                                        <li class="puceOk">github</li>
                                     </ul>
                                 </div>
 
@@ -217,13 +228,15 @@
                                         <li class="titleli">Et aussi:</li>
                                         <li>Méthodologie de projet (Scrum)</li>
                                         <li>Gestion des Big Data</li>
-                                        <li class="puceOk">Algorithmie  </li>
+                                        <li class="puceOk">Algorithmie </li>
                                     </ul>
                                 </div>
-                            </div>                
-                        </div> <!--Fin de page 1-->
+                            </div>
+                        </div>
+                        <!--Fin de page 1-->
 
-                        <div class="carousel-item"><!--Page 2 motivation-->
+                        <div class="carousel-item">
+                            <!--Page 2 motivation-->
                             <p>
                                 </br>
                                 Curieux de nature et avec l’envie d’apprendre, j’ai déjà suivi le MOOC SecNumacadémie de l’ANSSI sur les modules suivants : Panorama de la SSI, Sécurité de l’authentification, Sécurité sur internet, Sécurité du poste de travail et nomadisme. Je me forme également en autodidacte afin d’acquérir de bonnes bases solides utiles à la poursuite de mon objectif professionnel.
@@ -232,20 +245,21 @@
                                 De nature optimiste, avec une très bonne facilité d’adaptation tant à un poste que dans une équipe, et une curiosité sans fin, je serais capable de m’intégrer au mieux dans votre structure et je serais heureux d’en apprendre davantage à vos côtés.
                                 </br>
                                 </br>
-                                Cette formation étant une réelle opportunité pour moi, je suis plus que motivé à donner le meilleur de moi-même afin de réussir cette formation, et c’est avec plaisir que je mettrai  mon expérience dans ce domaine, à votre disposition afin de remplir vos objectifs qui deviendront les miens.
+                                Cette formation étant une réelle opportunité pour moi, je suis plus que motivé à donner le meilleur de moi-même afin de réussir cette formation, et c’est avec plaisir que je mettrai mon expérience dans ce domaine, à votre disposition afin de remplir vos objectifs qui deviendront les miens.
                                 </br>
                                 </br>
-                                Si vous voulez plus de renseignements à mon sujet, je serai ravi d’y répondre lors d’un éventuel entretien. Pour plus de renseignements sur la formation, je vous invite à suivre ce lien : <a class="formation "href="https://www.m2iformation.fr/uploads/browser/documents/pdf/lille/fiche_cda-formation_concepteur_developpeur_d_applications_cambrai-oct2020.pdf" target="_blank">"Formation Concepteur Développeur d'Application" </a>
-                                </br>          </br>   
-                        
+                                Si vous voulez plus de renseignements à mon sujet, je serai ravi d’y répondre lors d’un éventuel entretien. Pour plus de renseignements sur la formation, je vous invite à suivre ce lien : <a class="formation " href="https://www.m2iformation.fr/uploads/browser/documents/pdf/lille/fiche_cda-formation_concepteur_developpeur_d_applications_cambrai-oct2020.pdf" target="_blank">"Formation Concepteur Développeur d'Application" </a>
+                                </br> </br>
+
                                 En espérant que ceci retiendra votre attention, veuillez agréer, Madame, Monsieur, ma considération distinguée.
                                 <br><br><br>
-                            </p>                
-                        </div> <!--Fin de page 2-->
+                            </p>
+                        </div>
+                        <!--Fin de page 2-->
                     </div>
 
                     <!--Button previous-->
-                    
+
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -259,99 +273,156 @@
                 </div>
             </div>
 
-            <!--Afficher CV-->
-            <div class="text-center buttonCV">
-                <a href="#" class="btn btn-lg btn-outline-light" onClick="window.open('doc/CV.pdf');">
-                <i class="fas fa-download"></i>Voir mon CV</a>  
-            </div>
-        </div><!--FIN A PROPOS -->
+
+        </div>
+        <!--FIN A PROPOS -->
 
 
-                                        <!-- Partie PROJET-->
+        <!-- Partie PROJET-->
         <div class="bg-project">
-            <div class="container"> <!--sert à centrer le contenu et aussi au responsive il faut le faire à chaque partie -->
+            <div class="container">
+                <!--sert à centrer le contenu et aussi au responsive il faut le faire à chaque partie -->
                 <h2 id="PROJECT">Mes projets</h2>
 
                 <div class="mt-2 mb-2 separator d-flex justify-content-center align-items-center ">
                     <div class="line"></div>
                     <!--my-4 = margin sur l'axe Y de 4-->
-                    <i class="fas fa-folder-open fa-4x mx-4"></i>                 
+                    <i class="fas fa-folder-open fa-4x mx-4"></i>
                     <div class="line"></div>
                 </div>
 
 
-                <div class="row"> <!--bootstrap fonctionne sur une grille de 12 On peut donc avoir une row avec 4 colonnes de 3-->
+                <div class="row">
+                    <!--bootstrap fonctionne sur une grille de 12 On peut donc avoir une row avec 4 colonnes de 3-->
 
                     <!--On aura 3 colonne sur pc donc 4 (12/3 = 4) , 
                         6 colonnes sur tablettes et 1 sur mobiles-->
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="position-relative"> 
+                    <!-- vignette Aperture-->
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-1">
-                                <div class="filter"> <!--Calque sur image-->
+                                <div class="filter">
+                                    <!--Calque sur image-->
                                     <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet3">
-                                <img width="100%"  class="image " src="img/imgModalProject/Aperture Taquin.PNG" alt="">
+                                <img width="100%" class="image " src="img/imgModalProject/Aperture Taquin.PNG" alt="">
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="position-relative"> 
+                    <!-- vignette E-gaming-->
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-2">
-                                <div class="filter"> <!--Calque sur image-->
+                                <div class="filter">
+                                    <!--Calque sur image-->
                                     <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet2">
-                                <img width="100%" class="image " src="img/imgModalProject/InstaManga.PNG">
+                                <img width="100%" class="image " src="img/imgModalProject/egaming.PNG">
                             </div>
                         </div>
                     </div>
 
 
-
-                    <div class="col-12 col-md-6 col-lg-4  mb-4">
+                    <!-- vignette Angupex-->
+                    <div class="col-12 col-md-6 col-lg-3  mb-4">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-3">
-                                <div class="filter"> <!--Calque sur image-->
+                                <div class="filter">
+                                    <!--Calque sur image-->
                                     <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet3">
-                                <img width="100%" class="image " src="img/imgModalProject/liste-fiorella.PNG">
+                                <img width="100%" class="image " src="img/imgModalProject/Angupex.PNG">
                             </div>
                         </div>
                     </div>
 
 
-
-                    <div class="col-12 col-md-6 col-lg-4  mb-4">
+                    <!-- vignette Amalshia-->
+                    <div class="col-12 col-md-6 col-lg-3  mb-4">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-4">
-                                <div class="filter"> <!--Calque sur image-->
+                                <div class="filter">
+                                    <!--Calque sur image-->
                                     <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet4">
-                            <img width="100%" class="image " src="img/imgModalProject/Amalshia.PNG">
+                                <img width="100%" class="image " src="img/imgModalProject/Amalshia.PNG">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- vignette webflix-->
+                    <div class="col-12 col-md-6 col-lg-3  mb-4">
+                        <div class="position-relative">
+                            <a href="#" data-toggle="modal" data-target="#project-5">
+                                <div class="filter">
+                                    <!--Calque sur image-->
+                                    <img src="img/star.gif" alt="">
+                                </div>
+                            </a>
+                            <div class=" baseprojet projet4">
+                                <img width="100%" class="image " src="img/imgModalProject/webflix.PNG">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- vignette immobiliare-->
+                    <div class="col-12 col-md-6 col-lg-3  mb-4">
+                        <div class="position-relative">
+                            <a href="#" data-toggle="modal" data-target="#project-6">
+                                <div class="filter">
+                                    <!--Calque sur image-->
+                                    <img src="img/star.gif" alt="">
+                                </div>
+                            </a>
+                            <div class=" baseprojet projet4">
+                                <img width="100%" class="image " src="img/imgModalProject/immobiliare.PNG">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- vignette pizzaparty-->
+                    <div class="col-12 col-md-6 col-lg-3  mb-4">
+                        <div class="position-relative">
+                            <a href="#" data-toggle="modal" data-target="#project-7">
+                                <div class="filter">
+                                    <!--Calque sur image-->
+                                    <img src="img/star.gif" alt="">
+                                </div>
+                            </a>
+                            <div class=" baseprojet projet4">
+                                <img width="100%" class="image " src="img/imgModalProject/pizzaparty.PNG">
                             </div>
                         </div>
                     </div>
 
 
 
+
+
+
+
+
                     <!--On passe à la ligne dès qu'on est à 12-->
-                    <div class="col-12 col-md-6 col-lg-4  mb-4">
+                    <div class="col-12 col-md-6 col-lg-3  mb-4">
                         <div class="position-relative">
-                            <a href="#" data-toggle="modal" data-target="#project-5">
-                                <div class="filter"> <!--Calque sur image-->
+                            <a href="#" data-toggle="modal" data-target="#project-8">
+                                <div class="filter">
+                                    <!--Calque sur image-->
                                     <img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojetVide projet5">
+
                                 <p> PROJET à venir</p>
                             </div>
                         </div>
@@ -359,25 +430,29 @@
 
 
 
-                    <div class="col-12 col-md-6 col-lg-4  mb-4">
+                    <!-- <div class="col-12 col-md-6 col-lg-4  mb-4">
                         <div class="position-relative">
-                            <a href="#" data-toggle="modal" data-target="#project-6">
-                                <div class="filter"> <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                            <a href="#" data-toggle="modal" data-target="#project-9">
+                                <div class="filter">
+                                    <!--Calque sur image-->
+                    <!--<img src="img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojetVide projet6">
                                 <p> PROJET à venir</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                </div> <!--Fin de la div Row-->
+                </div>
+                <!--Fin de la div Row-->
 
-                <div><!--PARTIE MODAL -->     
-                    <!--Modal 1-->      
+                <div>
+                    <!--PARTIE MODAL -->
+
+                    <!--Modal 1 Aperture-->
                     <div class="modal fade" id="project-1">
-                        <div class="modal-dialog modal-xl"> 
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content hauteurModal">
 
                                 <div class="modal-header">
@@ -393,63 +468,60 @@
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="projet/Exo_Jeu_taquin/index.html" 
-                                        target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="projet/Exo_Jeu_taquin/index.html" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Modal 2-->
+                    <!--Modal 2 E-Gaming-->
                     <div class="modal fade" id="project-2">
-                        <div class="modal-dialog modal-xl"> 
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content hauteurModal">
 
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Projet Insta</h5>
+                                    <h5 class="modal-title">Projet Symfony : E-Gaming</h5>
                                     <button class="close" data-dismiss="modal">
                                         <i class="fas fa-times"></i>
                                     </button>
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/InstaManga.PNG" alt="">
+                                    <img width="100%" src="img/imgModalProject/egaming.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="projet/Exo_Instamanga/index.html" 
-                                        target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="https://www.egaming.smaga-michael.fr/" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Modal 3-->
+                    <!--Modal 3 ANGUPEX-->
                     <div class="modal fade" id="project-3">
-                        <div class="modal-dialog modal-xl"> 
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content hauteurModal">
 
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Liste de noël de Fiorella</h5>
+                                    <h5 class="modal-title">Projet Angular : Reprise du site d'Apex afin de s'entrainer sur Angular</h5>
                                     <button class="close" data-dismiss="modal">
                                         <i class="fas fa-times"></i>
                                     </button>
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/liste-fiorella.PNG" alt="">
+                                    <img width="100%" src="img/imgModalProject/Angupex.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="projet/Exo_liste_de_Fiorella/index.html" 
-                                        target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="https://www.augupex.smaga-michael.fr/" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Modal 4-->
+                    <!--Modal 4 Amalshia-->
                     <div class="modal fade" id="project-4">
-                        <div class="modal-dialog modal-xl"> 
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content hauteurModal">
 
                                 <div class="modal-header">
@@ -465,158 +537,186 @@
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php" 
-                                        target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Modal 5-->
+                    <!--Modal 5 Webflix-->
                     <div class="modal fade" id="project-5">
-                        <div class="modal-dialog modal-xl"> 
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content hauteurModal">
 
                                 <div class="modal-header">
-                                    <h5 class="modal-title">nom du projet</h5>
+                                    <h5 class="modal-title">Projet PHP : Création d'un site "Webflix"</h5>
                                     <button class="close" data-dismiss="modal">
                                         <i class="fas fa-times"></i>
                                     </button>
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="" alt="">
+                                    <img width="100%" src="img/imgModalProject/webflix.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="" 
-                                        target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="https://www.webflix.smaga-michael.fr" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Modal 6-->
+                    <!--Modal 6 Immobiliare-->
                     <div class="modal fade" id="project-6">
-                        <div class="modal-dialog modal-xl"> 
+                        <div class="modal-dialog modal-xl">
                             <div class="modal-content hauteurModal">
 
                                 <div class="modal-header">
-                                    <h5 class="modal-title">nom du projet</h5>
+                                    <h5 class="modal-title">Projet Symfony : "Immobiliare"</h5>
                                     <button class="close" data-dismiss="modal">
                                         <i class="fas fa-times"></i>
                                     </button>
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="" alt="">
+                                    <img width="100%" src="img/imgModalProject/immobiliare.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="" 
-                                        target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="https://www.immobiliare.smaga-michael.fr/" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div> <!--Fin PARTIE MODAL -->                      
-            </div>
-        </div> <br>
 
+                    <!--Modal 7 PizzaParty-->
+                    <div class="modal fade" id="project-7">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content hauteurModal">
 
-                                        <!-- Partie CONTACT-->
-        <div class="contact">
-        
-            <div class="container">    
-                <div id="CONTACT"  class=" mt-2 mb-2  separator d-flex justify-content-center align-items-center"><!--Separateur-->
-                    <div class="line"></div>
-                    <h2 >Me contacter</h2>
-                    <!--my-4 = margin sur l'axe Y de 4-->
-                    <i class="fas fa-mail-bulk fa-2x mx-2"></i>
-                    <div class="line"></div>
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Projet Angular : "PizzaParty"</h5>
+                                    <button class="close" data-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img width="100%" src="img/imgModalProject/pizzaparty.PNG" alt="">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    <a href="https://www.pizzaparty.smaga-michael.fr/" target="_blank" class="btn btn-success">Voir la maquette</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Fin PARTIE MODAL -->
                 </div>
+            </div> <br>
 
-                <?php
-                if(isset($_GET['success'])){
-                    echo '<p class="MessageSuccess form-group text-center">Votre message a bien été envoyé</p><br>';
+
+            <!-- Partie CONTACT-->
+            <div class="contact">
+
+                <div class="container">
+                    <div id="CONTACT" class=" mt-2 mb-2  separator d-flex justify-content-center align-items-center">
+                        <!--Separateur-->
+                        <div class="line"></div>
+                        <h2>Me contacter</h2>
+                        <!--my-4 = margin sur l'axe Y de 4-->
+                        <i class="fas fa-mail-bulk fa-2x mx-2"></i>
+                        <div class="line"></div>
+                    </div>
+
+                    <?php
+                    if (isset($_GET['success'])) {
+                        echo '<p class="MessageSuccess form-group text-center">Votre message a bien été envoyé</p><br>';
                     }
-                ?>
-                                       
-                <div class="col-lg-8 mx-auto "> <!--formulaire  contact-->
-                     
-                    <form class="contact-form" method="POST" >  <!--balise pour indiquer le formulaire-->
-                        <div class="form-group shadowblock">
-                                <label for="name" class="d-none ">Nom</label> 
+                    ?>
+
+                    <div class="col-lg-8 mx-auto ">
+                        <!--formulaire  contact-->
+
+                        <form class="contact-form" method="POST">
+                            <!--balise pour indiquer le formulaire-->
+                            <div class="form-group shadowblock">
+                                <label for="name" class="d-none ">Nom</label>
                                 <input type="text" name="name" id="Nom" placeholder="Nom" class="form-control">
-                        </div>
-                            
-                        <div class="form-group shadowblock">
-                                <label for="email" class="d-none">Email</label> 
+                            </div>
+
+                            <div class="form-group shadowblock">
+                                <label for="email" class="d-none">Email</label>
                                 <input type="email" name="email" id="email" placeholder="Adresse email" class="form-control">
-                        </div>
+                            </div>
 
-                        <div class="form-group shadowblock">
-                            <label for="phone" class="d-none">Téléphone</label> 
-                            <input type="phone" name="phone" id="phone" placeholder="Téléphone" class="form-control">
-                        </div>
+                            <div class="form-group shadowblock">
+                                <label for="phone" class="d-none">Téléphone</label>
+                                <input type="phone" name="phone" id="phone" placeholder="Téléphone" class="form-control">
+                            </div>
 
-                        <div class="form-group shadowblock">
-                            <label for="Subject" class="d-none">Sujet</label> 
-                            <input type="Subject" name="Subject" id="Subject" placeholder="Sujet" class="form-control">
-                        </div>
+                            <div class="form-group shadowblock">
+                                <label for="Subject" class="d-none">Sujet</label>
+                                <input type="Subject" name="Subject" id="Subject" placeholder="Sujet" class="form-control">
+                            </div>
 
-                        <label for="message"></label>
-                        <textarea name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message " class="form-control shadowblock"></textarea>
-            
-                        <div class="text-center ">
-                            <button class="buttonContact">Envoyer</button>
-                        </div>
-                        <div  class="form-group text-center">
-                            <a class="envoyermail" href="mailto:smaga.michael@bbox.fr" >Ou si vous préférez envoyez moi un Mail directement depuis votre boîte mail en cliquant ici</a>
-                        </div>
-                    </form>
+                            <label for="message"></label>
+                            <textarea name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message " class="form-control shadowblock"></textarea>
+
+                            <div class="text-center ">
+                                <button class="buttonContact">Envoyer</button>
+                            </div>
+                            <div class="form-group text-center">
+                                <a class="envoyermail" href="mailto:smaga.michael@bbox.fr">Ou si vous préférez envoyez moi un Mail directement depuis votre boîte mail en cliquant ici</a>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+                    <br /><br />
                 </div>
-            
-         
-                    
-              
-                <br/><br/>
             </div>
         </div>
-    </div>                    
 
-                                            <!--FOOTER-->
+        <!--FOOTER-->
 
-    <footer >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4"><h3>Adresse</h3>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3>Adresse</h3>
                         <p>- Nord-Pas-De-Clais -<br> - - - - - - - - -
 
                         </p>
-                        </div>
-                        <div class="col-lg-4"><h3>Réseau sociaux</h3>
-                            
-                        
-                            <a class="btn btn-lg btn-outline-light" href="https://www.linkedin.com/in/michael-smaga-88667a136/" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Réseau sociaux</h3>
 
-                            <a class="btn btn-lg btn-outline-light" href="https://github.com/SmagaMichael" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        
-                        </div>
 
-                        <div class="col-lg-4"><h3>A propos</h3>
-                            <p>Merci de votre visite &#128522; </p>
-                        </div>
+                        <a class="btn btn-lg btn-outline-light" href="https://www.linkedin.com/in/michael-smaga-88667a136/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a class="btn btn-lg btn-outline-light" href="https://github.com/SmagaMichael" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h3>A propos</h3>
+                        <p>Merci de votre visite &#128522; </p>
                     </div>
                 </div>
+            </div>
         </footer>
-        
-        
+
+
         <div class="bg-copyright text-center py-2">
             <div class="container">
                 <small class="m-0">Copyright &copy; Smaga Michaël 2020 </small>
@@ -625,13 +725,13 @@
 
 
         <?php
-  
-        if (isset($_POST) && !empty($_POST)){
-        //si le champs est rempli et différent de vide 
+
+        if (isset($_POST) && !empty($_POST)) {
+            //si le champs est rempli et différent de vide 
 
             $to    = "smaga.michael@bbox.fr";
 
-            
+
             // adresse MAIL OVH liée à l’hébergement.
             $from  = $_POST["email"];
             ini_set("SMTP", "smtp.smaga-michael.fr");   // Pour les hébergements mutualisés Windows de OVH
@@ -640,7 +740,7 @@
             $JOUR  = date("Y-m-d");
             $HEURE = date("H:i");
 
-            
+
 
             $Subject = $_POST['Subject'];
             // $Subject .='Content-Type: text/html; charset="utf-8"'." ";
@@ -650,37 +750,37 @@
 
             $mail_Data .= "<html> \n";
 
-                $mail_Data .= "<head> \n";
-                    $mail_Data .= "<title> Demande de projet </title> \n";
-                $mail_Data .= "</head> \n";
+            $mail_Data .= "<head> \n";
+            $mail_Data .= "<title> Demande de projet </title> \n";
+            $mail_Data .= "</head> \n";
 
-                $mail_Data .= "<body> \n";
-                    $mail_Data .= '<b>'.$Subject.'</b> <br>';
-                    $mail_Data .= "<br> \n";
-                    $mail_Data .= $_POST["message"].'<br>';
-                    $mail_Data .= "<br> \n";
-                    $mail_Data .= ''.$_POST['name'].': '.$_POST["phone"].'<br>';
-                $mail_Data .= "</body> \n";
+            $mail_Data .= "<body> \n";
+            $mail_Data .= '<b>' . $Subject . '</b> <br>';
+            $mail_Data .= "<br> \n";
+            $mail_Data .= $_POST["message"] . '<br>';
+            $mail_Data .= "<br> \n";
+            $mail_Data .= '' . $_POST['name'] . ': ' . $_POST["phone"] . '<br>';
+            $mail_Data .= "</body> \n";
 
             $mail_Data .= "</HTML> \n";
 
             $headers  = "MIME-Version: 1.0 \n";
             $headers .= "From: $from  \n";
-            $headers .='Content-Type: text/html; charset="utf-8"'." ";
+            $headers .= 'Content-Type: text/html; charset="utf-8"' . " ";
             // ici on envoie le mail au format texte encodé en UTF-8
             // $headers .= "Content-type: text/html; charset=iso-8859-1 \n";
 
-            $headers .='Content-Transfer-Encoding: 8bit';
+            $headers .= 'Content-Transfer-Encoding: 8bit';
             // ici on précise qu'il y a des caractères accentués
 
 
             // Message de Priorité haute
             $headers .= "X-Priority: 1  \n";
             $headers .= "X-MSMail-Priority: High \n";
-            
+
 
             $CR_Mail = TRUE;
-            $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
+            $CR_Mail = @mail($to, $Subject, $mail_Data, $headers);
 
 
             // if ($CR_Mail === FALSE){
@@ -688,19 +788,19 @@
             // }else{
             //     echo " *** CR_Mail=$CR_Mail - Mail envoyé<br> \n";
             // }
-        } 
-       
-           ?>
+        }
 
- 
+        ?>
 
-<!-- scripts -->
-    <script src="extension/particles/particles.js"></script>
-    <script src="extension/particles/js/app.js"></script>
 
-    <script src="extension/jquery-3.5.1.min.js"></script>
-    <script src="extension/bootstrap.bundle.min.js" ></script>
-    <script src="script.js"></script>
+
+        <!-- scripts -->
+        <script src="extension/particles/particles.js"></script>
+        <script src="extension/particles/js/app.js"></script>
+
+        <script src="extension/jquery-3.5.1.min.js"></script>
+        <script src="extension/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
 
 </body>
 

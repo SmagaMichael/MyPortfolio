@@ -78,6 +78,10 @@ button{
     
 }
 
+.AllChoice button{
+  display: none;
+}
+
 .panier > p{
     background-color:  #338c44;
     font-weight: 700;
