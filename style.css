@@ -518,6 +518,12 @@ largeur pour que la lune ne soit pas écrasée */
     padding-top: 60px;
     color: rgb(255, 255, 255);}
 
+.contact{
+    background-image: url(img/bg_contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 
 .contact h2{
     font-size: 2rem;

@@ -53,14 +53,14 @@
                 <li>
                     <a href="#">
                         <i class="fas fa-arrow-circle-up"></i>
-                        <button class="buttonSidebar">haut de page</button>
+                        <button id="home_button" class="buttonSidebar">Accueil</button>
                     </a>
                 </li>
 
                 <li>
                     <a href="#APROPOS">
                         <i class="fa fa-user "></i>
-                        <button class="buttonSidebar">A propos</button>
+                        <button id="about_button" class="buttonSidebar">A propos</button>
                     </a>
                 </li>
 
@@ -68,10 +68,10 @@
                 <li>
                     <a href="#PROJECT">
                         <i class="far fa-folder-open"></i>
-                        <button class=" buttonSidebar " type="button">Mes projets</button></a>
+                        <button id="project_button" class=" buttonSidebar " type="button">Mes projets</button></a>
                 </li>
 
-                <li>
+                <!-- <li>
                     <i class="far fa-folder-open"></i>
                     <button type="button" class="buttonSidebar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Lien projets</button>
                     <ul class="sub-menu">
@@ -86,7 +86,7 @@
 
                         </div>
                     </ul>
-                </li>
+                </li> -->
 
                 <li><a onClick="window.open('doc/CV.pdf');">
                         <i class="fas fa-download"></i>
@@ -96,7 +96,7 @@
                 <li>
                     <a href="#CONTACT">
                         <i class="fas fa-at"></i>
-                        <button class="buttonSidebar">Contact</button>
+                        <button id="contact_button" class="buttonSidebar">Contact</button>
                     </a><!-- <span class="hover"></span> -->
                 </li>
             </ul>
@@ -111,7 +111,7 @@
         <!-- Partie PORTFOLIO-->
         <!-- si bg portfolio relative => pointer event ne fonctionne pas mais particules derriere avatar
         si bg portfolio absolute => pointer fonctionne mais particules devant avatar-->
-        <div class=" container bg-portfolio pointer-events: auto mb-5">
+        <div id="div_home" class=" container bg-portfolio pointer-events: auto mb-5">
             <div class="container text-center fondTitle ">
                 <br><br>
                 <img width="240" src="img/avatarb.png" alt="Smaga Michaël">
@@ -124,12 +124,12 @@
                 </div>
                 <p>développeur web</p>
             </div>
-        </div><br><br>
+        </div>
 
 
 
 
-        <div class="bg-about">
+        <div id="div_about" class="bg-about" hidden>
             <!--A PROPOS -->
             <div class="container ">
                 <div id="APROPOS" class="mt-2 mb-2 separator d-flex justify-content-center align-items-center mb-5">
@@ -279,7 +279,7 @@
 
 
         <!-- Partie PROJET-->
-        <div class="bg-project">
+        <div id="div_project" class="bg-project" hidden>
             <div class="container">
                 <!--sert à centrer le contenu et aussi au responsive il faut le faire à chaque partie -->
                 <h2 id="PROJECT">Mes projets</h2>
@@ -430,19 +430,7 @@
 
 
 
-                    <!-- <div class="col-12 col-md-6 col-lg-4  mb-4">
-                        <div class="position-relative">
-                            <a href="#" data-toggle="modal" data-target="#project-9">
-                                <div class="filter">
-                                    <!--Calque sur image-->
-                    <!--<img src="img/star.gif" alt="">
-                                </div>
-                            </a>
-                            <div class=" baseprojetVide projet6">
-                                <p> PROJET à venir</p>
-                            </div>
-                        </div>
-                    </div> -->
+
 
                 </div>
                 <!--Fin de la div Row-->
@@ -619,70 +607,69 @@
             </div> <br>
 
 
-            <!-- Partie CONTACT-->
-            <div class="contact">
 
-                <div class="container">
-                    <div id="CONTACT" class=" mt-2 mb-2  separator d-flex justify-content-center align-items-center">
-                        <!--Separateur-->
-                        <div class="line"></div>
-                        <h2>Me contacter</h2>
-                        <!--my-4 = margin sur l'axe Y de 4-->
-                        <i class="fas fa-mail-bulk fa-2x mx-2"></i>
-                        <div class="line"></div>
-                    </div>
+        </div>
+        <!-- Partie CONTACT-->
+        <div id="div_contact" class="contact" hidden>
 
-                    <?php
-                    if (isset($_GET['success'])) {
-                        echo '<p class="MessageSuccess form-group text-center">Votre message a bien été envoyé</p><br>';
-                    }
-                    ?>
-
-                    <div class="col-lg-8 mx-auto ">
-                        <!--formulaire  contact-->
-
-                        <form class="contact-form" method="POST">
-                            <!--balise pour indiquer le formulaire-->
-                            <div class="form-group shadowblock">
-                                <label for="name" class="d-none ">Nom</label>
-                                <input type="text" name="name" id="Nom" placeholder="Nom" class="form-control">
-                            </div>
-
-                            <div class="form-group shadowblock">
-                                <label for="email" class="d-none">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Adresse email" class="form-control">
-                            </div>
-
-                            <div class="form-group shadowblock">
-                                <label for="phone" class="d-none">Téléphone</label>
-                                <input type="phone" name="phone" id="phone" placeholder="Téléphone" class="form-control">
-                            </div>
-
-                            <div class="form-group shadowblock">
-                                <label for="Subject" class="d-none">Sujet</label>
-                                <input type="Subject" name="Subject" id="Subject" placeholder="Sujet" class="form-control">
-                            </div>
-
-                            <label for="message"></label>
-                            <textarea name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message " class="form-control shadowblock"></textarea>
-
-                            <div class="text-center ">
-                                <button class="buttonContact">Envoyer</button>
-                            </div>
-                            <div class="form-group text-center">
-                                <a class="envoyermail" href="mailto:smaga.michael@bbox.fr">Ou si vous préférez envoyez moi un Mail directement depuis votre boîte mail en cliquant ici</a>
-                            </div>
-                        </form>
-                    </div>
-
-
-
-
-                    <br /><br />
+            <div class="container">
+                <div id="CONTACT" class=" mt-2 mb-2  separator d-flex justify-content-center align-items-center">
+                    <!--Separateur-->
+                    <div class="line"></div>
+                    <h2>Me contacter</h2>
+                    <!--my-4 = margin sur l'axe Y de 4-->
+                    <i class="fas fa-mail-bulk fa-2x mx-2"></i>
+                    <div class="line"></div>
                 </div>
+
+                <?php
+                if (isset($_GET['success'])) {
+                    echo '<p class="MessageSuccess form-group text-center">Votre message a bien été envoyé</p><br>';
+                }
+                ?>
+
+                <div class="col-lg-8 mx-auto ">
+                    <!--formulaire  contact-->
+
+                    <form class="contact-form" method="POST">
+                        <!--balise pour indiquer le formulaire-->
+                        <div class="form-group shadowblock">
+                            <label for="name" class="d-none ">Nom</label>
+                            <input type="text" name="name" id="Nom" placeholder="Nom" class="form-control">
+                        </div>
+
+                        <div class="form-group shadowblock">
+                            <label for="email" class="d-none">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Adresse email" class="form-control">
+                        </div>
+
+                        <div class="form-group shadowblock">
+                            <label for="phone" class="d-none">Téléphone</label>
+                            <input type="phone" name="phone" id="phone" placeholder="Téléphone" class="form-control">
+                        </div>
+
+                        <div class="form-group shadowblock">
+                            <label for="Subject" class="d-none">Sujet</label>
+                            <input type="Subject" name="Subject" id="Subject" placeholder="Sujet" class="form-control">
+                        </div>
+
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message " class="form-control shadowblock"></textarea>
+
+                        <div class="text-center ">
+                            <button class="buttonContact">Envoyer</button>
+                        </div>
+                        <div class="form-group text-center">
+                            <a class="envoyermail" href="mailto:smaga.michael@bbox.fr">Ou si vous préférez envoyez moi un Mail directement depuis votre boîte mail en cliquant ici</a>
+                        </div>
+                    </form>
+                </div>
+
+
+                <br>
+
             </div>
         </div>
-
         <!--FOOTER-->
 
         <footer>
