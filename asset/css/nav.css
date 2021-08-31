@@ -1,0 +1,240 @@
+/* Barre navigation coté gauche au dela de 1461px */
+@media (min-width: 1461px){
+    /* Nom et prénom */
+    .sidebar h1{
+        color:#FFF;
+        font:26px Open Sans;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    
+    .sidebar .name{
+        color:rgb(179, 127, 67);
+    }
+    
+    /* Ensemble barre de navigation  */
+    .sidebar{
+      width:15%;
+      height:100%;
+      position:fixed ;
+      z-index:2000; 
+      background:url("../img/CaptureMoon.png");
+      
+      border-right:10px solid #aa7423;}
+    
+    .buttonSidebar{
+        width: 85%;
+        height: 30px;
+        font: 20px Oswald;
+        color:rgb(179, 127, 67);
+        text-transform: uppercase;
+        background-color: black;
+        border: 2px solid rgb(179, 127, 67);
+        border-radius: 15px;
+    }
+    
+    /* ensemble de tout les li */
+    .sidebar ul{
+        padding: 0px;
+        width: 100%;}
+      
+    /* tout les li de la barre de navigation  */
+    .sidebar li{
+        list-style:none;
+        padding:5px 0px;
+        text-align: center;
+        padding-top: 30px;
+        }
+      
+    /* couleur des logos devant les menus */
+    .sidebar a{
+        color:rgb(179, 127, 67);}
+    .fa-folder-open{
+        color:rgb(179, 127, 67);}
+    .fa-download{
+        color:rgb(179, 127, 67);
+    cursor: pointer;}
+    
+    /* enlever la décoration sur les logo */
+    .sidebar a:hover{color:rgb(179, 127, 67);}
+    
+    /* Pousse le titre menu de son logo */
+    .sidebar .push{
+        margin-right:10px;
+    }
+    
+    
+    /* SOUS MENU */
+    
+    
+    /* ensemble des projets */
+    .dropdown-menu{
+        background-color: black !important;
+        border: 2px solid rgb(179, 127, 67) !important;
+        border-radius: 15px !important;
+        width: 100%;
+    }
+    
+    /* bouton des projets */
+    .buttonSidebarSubmenu{
+        width: 100%;
+        height: 30px;
+        font: 20px Oswald;
+        color:rgb(179, 127, 67);
+        text-transform: uppercase;
+        background-color: black;
+        border-radius: 15px;
+    }
+    
+    .dropdown-item{
+        background-color: black !important;
+        padding: 0px;
+    }
+    /* .dropdown{
+        height: 60px !important;
+    
+    } */
+    .sub-menu li a{
+        padding:0;
+        width: 100%;
+    }
+    /* Fin du css pour le sous menu  */
+    }
+    
+    
+    
+    
+    
+    
+    /* Barre nav responsive 
+    passer  la navBar de gauche à top
+     quand on est en dessous de 1460px
+    */
+    @media (max-width: 1460px ){
+    
+    footer{width: 100% !important;;
+             margin-left: 0 !important;}
+    
+    .page{width: 100% !important; 
+            margin-left: 0 !important;}
+    
+    .bg-copyright{width: 100% !important; 
+            margin-left: 0 !important;}
+    
+    /* Nom et prénom */
+    .sidebar h1 {
+        color: #FFF;
+        font: 26px Open Sans;
+        margin-bottom: 0px !important;
+        text-align: center;
+    }
+    
+    .sidebar .name{
+        color:rgb(179, 127, 67);
+    }
+    
+    /* Ensemble barre de navigation  */
+    .sidebar{
+        width:100%;
+        height:auto;
+        display: flex;
+        position: fixed;
+        top: 0;
+        justify-content: space-between !important;
+        z-index:2000; 
+        background-color: black !important;
+        background: none;
+        border:2px solid #aa7423;}
+    
+    .buttonSidebar{
+        width: 160px;
+        height: 30px;
+        font: 20px Oswald;
+        color:rgb(179, 127, 67);
+        text-transform: uppercase;
+        background-color: black;
+        border: 2px solid rgb(179, 127, 67);
+        border-radius: 15px;
+    }
+    
+    /* ensemble de tout les li */
+    .sidebar ul{
+        padding: 5px 5px 5px 15px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+      
+    /* tout les li de la barre de navigation  */
+    .sidebar li{
+        list-style:none;
+        padding:5px 15px;
+        text-align: center;
+        }
+      
+    /* couleur des logos devant les menus */
+    .sidebar a{
+        color:rgb(179, 127, 67);}
+        
+    .fa-folder-open{
+        color:rgb(179, 127, 67);
+    cursor: pointer;}
+    .fa-download{
+        color:rgb(179, 127, 67);
+    cursor: pointer;}
+    
+    /* enlever la décoration sur les logo */
+    .sidebar a:hover{color:rgb(179, 127, 67);}
+    
+    
+    
+    
+    /* SOUS MENU */
+    /* bouton pour voir les projets */
+    
+    /* ensemble des projets */
+    .dropdown-menu{
+        background-color: black !important;
+        border: 2px solid rgb(179, 127, 67) !important;
+        border-radius: 15px !important;
+        width: 100%;
+    }
+    
+    /* bouton des projets */
+    .buttonSidebarSubmenu{
+        width: 100%;
+        height: 30px;
+        font: 20px Oswald;
+        color:rgb(179, 127, 67);
+        text-transform: uppercase;
+        background-color: black;
+        border-radius: 15px;
+    }
+    
+    .dropdown-item{
+        background-color: black !important;
+        padding: 0px;
+    }
+    
+    .sub-menu li a{
+        padding:0;
+        width: 100%;
+    }
+    /* Fin du css pour le sous menu  */
+    
+
+    }
+    
+    /* fin de la Barre nav responsive */
+    
+    /* @media (min-width: 1460px){
+    .navbar-expand-lg .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        }
+    } */
+    
+    

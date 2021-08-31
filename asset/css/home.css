@@ -1,0 +1,27 @@
+                                 /* PARTIE PORTFOLIO */
+.bg-portfolio{
+    background: transparent;
+    position: relative;
+    color: white;
+    padding: 2rem 0; 
+    height: 95%;
+    background-image: url(../img/bg_home1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+   
+    /* 6fois le font-size du body */}
+
+.bg-portfolio h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;}
+
+.div-home-child{
+    z-index: 100;
+}
+
+.backgroundApropos{
+    background-color:#000000;
+}
+    

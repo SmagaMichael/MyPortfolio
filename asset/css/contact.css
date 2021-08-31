@@ -1,0 +1,49 @@
+/* PARTIE CONTACT */
+.MessageSuccess{
+    color: white;
+}
+
+#CONTACT{
+    padding-top: 60px;
+    color: rgb(255, 255, 255);}
+
+.contact{
+    background-image: url(../img/bg_contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.contact h2{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.contact-form .form-control{
+    border:0;
+    border-bottom: 1px solid black;}
+
+.contact-form .form-control:focus{
+     box-shadow: none;}
+
+.buttonContact{
+    margin: 25px 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.envoyermail{
+    color: rgb(255, 255, 255) ;
+    text-decoration: none ;
+    width: 100%;
+}
+
+.envoyermail:hover{
+    color: rgb(255, 255, 255) ;
+    border-bottom: 2px solid white;
+    text-decoration: none ;
+    width: 100%;
+}

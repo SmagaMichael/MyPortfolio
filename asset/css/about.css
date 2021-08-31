@@ -1,0 +1,62 @@
+/* A PROPOS */
+#APROPOS{
+    padding-top: 60px;
+}
+.carousel{
+    padding: 0 65px !important;
+}
+
+.bg-about{
+    color: white;
+    padding: 1rem 0;
+    height: 100%;
+
+    background-image: url(../img/bg_home1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bg-about h2{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(255, 255, 255);}
+
+
+.titleli{
+    color: rgb(240, 232, 232);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* A PROPOS  carousel*/
+
+.puceOk{
+    list-style: "\002611";}
+
+.nopuce{
+    list-style-type: none;}
+
+
+.carousel-control-next, .carousel-control-prev{
+    position: absolute;
+    width: 5% !important;
+}
+
+.carousel-control-next{
+    background-color: #aa7423;
+    right: 0px!important;}
+
+.carousel-control-prev{
+    background-color: #aa7423;
+    left: 0px!important;}
+
+
+.buttonCV{
+    margin: 5px 0;
+    z-index: 9999;
+    position: absolute;
+    left:45%;
+}
+                                

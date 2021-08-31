@@ -1,0 +1,43 @@
+
+body{
+font-family: 'Montserrat', sans-serif;
+display: flex;
+flex-wrap: wrap;}
+
+
+/* Changement d'image par rapport à la 
+largeur pour que la lune ne soit pas écrasée */
+@media (max-width: 1600px ){
+.page{
+    /* background-image: url(img/night.jpg); */
+    background-size:100% 100%;
+   
+    position: relative;
+    width: 85%;
+    margin-left: 15%;
+}
+}
+@media (min-width: 1601px ){
+.page{
+    /* background-image: url(img/bg_home.jpg); */
+    background-size:100% 100%;
+    position: relative;
+    width: 85%;
+    margin-left: 15%;
+}
+}
+
+
+                                 /* SEPARATEUR */
+.bg-portfolio p{
+    font-size: 1.5rem;
+    color:white}
+                
+
+ .separator .line{
+    height: 2px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px 5px;}
+                                

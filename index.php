@@ -4,9 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="asset/img/ms2.ico">
+    <link rel="apple-touch-icon" href="asset/img/ms2.ico" />
+
+
     <title>Portfolio Smaga Michaël</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="extension/particles/css/style.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/project.css">
+    <link rel="stylesheet" href="asset/css/nav.css">
+    <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="stylesheet" href="asset/css/footer.css">
+    <link rel="stylesheet" href="asset/css/contact.css">
+    <link rel="stylesheet" href="asset/css/about.css">
+    <link rel="stylesheet" href="asset/extension/particles/css/style.css">
+
 
 
     <!--permet de charger tout les composants à partir du serveur de bootstrap -->
@@ -17,8 +28,8 @@
 
     <!--lien vers la base de donnée d'icone-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="extension/bootstrap.min.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="asset/extension/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
 </head>
 
 
@@ -88,9 +99,9 @@
                     </ul>
                 </li> -->
 
-                <li><a onClick="window.open('doc/CV.pdf');">
+                <li><a onClick="window.open('asset/doc/CV.pdf');">
                         <i class="fas fa-download"></i>
-                        <button class="buttonSidebar">Voir mon CV</button></a>
+                        <button id="cv_button" class="buttonSidebar">Mon CV</button></a>
                 </li>
 
                 <li>
@@ -105,16 +116,17 @@
 
 
     <div class="page">
-        <div id="particles-js"></div> <!-- particles.js container -->
+       <!-- particles.js container -->
 
 
         <!-- Partie PORTFOLIO-->
         <!-- si bg portfolio relative => pointer event ne fonctionne pas mais particules derriere avatar
         si bg portfolio absolute => pointer fonctionne mais particules devant avatar-->
-        <div id="div_home" class=" container bg-portfolio pointer-events: auto mb-5">
-            <div class="container text-center fondTitle ">
+        <div id="div_home" class="bg-portfolio pointer-events: auto">
+        <div id="particles-js"></div> 
+            <div class="container text-center fondTitle div-home-child">
                 <br><br>
-                <img width="240" src="img/avatarb.png" alt="Smaga Michaël">
+                <img width="240" src="asset/img/avatarb.png" alt="Smaga Michaël">
                 <h1>Smaga Michaël</h1>
                 <div class="my-4 separator d-flex justify-content-center align-items-center">
                     <div class="line"></div>
@@ -122,17 +134,17 @@
                     <i class="fas fa-laptop-code fa-4x mx-4"></i>
                     <div class="line"></div>
                 </div>
-                <p>développeur web</p>
+                <p>Développeur web</p>
             </div>
         </div>
 
 
 
-
+        <!--Partie PROPOS -->
         <div id="div_about" class="bg-about" hidden>
             <!--A PROPOS -->
             <div class="container ">
-                <div id="APROPOS" class="mt-2 mb-2 separator d-flex justify-content-center align-items-center mb-5">
+                <div id="APROPOS" class="mb-2 separator d-flex justify-content-center align-items-center mb-5">
                     <div class="line"></div>
                     <i class="fas fa-id-card-alt fa-2x mx-2"></i>
                     <h2>A propos</h2>
@@ -156,14 +168,19 @@
                             <div class="row">
                                 <div class="col-lg-12 ">
 
-                                    <h3>Recherche de stage</h3>
+                                    <h3>Recherche d'un premier emploi</h3>
                                     <p>Madame, Monsieur,</p>
 
-                                    <p>
+                                    <!-- <p>
                                         Etant inscrit au centre de formation M2i, à la formation : ‘’ Concepteur / Développeur d'Application’’, je suis à la recherche d’une entreprise dans ce domaine pour y effectuer un stage afin de valider cette formation. (Date de stage: 5 Mai 2021 au 4 août 2021).
                                         </br>
-                                        D'ici la fin de cette formation, j'aurais vu: </p>
-                                    <p class="d-flex justify-content-center align-items-center  ">(Suivez mon avancée = &#x2611; )</p>
+                                        D'ici la fin de cette formation, j'aurais vu: </p> -->
+                                    <p>
+                                        Ayant fini ma formation de Concepteur Développeur d'Application au centre de formation M2i, ainsi que mon stage en tant que développeur Fullstack chez WeBreathe, (Date de stage:10 Mai 2021 au 4 août 2021), je suis à l'écoute de toute offre pouvant m'intéresser.
+                                        </br>
+                                        Dans cette formation j'ai pu voir : </p>
+<!-- 
+                                    <p class="d-flex justify-content-center align-items-center  ">(Suivez mon avancée = &#x2611; )</p> -->
                                 </div>
 
                                 <div class="col-lg-2 col-md-6">
@@ -174,7 +191,7 @@
                                         <li class="puceOk">java</li>
                                         <li class="puceOk">PHP</li>
                                         <li class="puceOk">JavaScript </li>
-                                        <li>UML</li>
+                                        <li class="puceOk">UML</li>
                                     </ul>
                                 </div>
 
@@ -196,7 +213,6 @@
                                         <li class="titleli">Framework JavaScript:</li>
                                         <li class="puceOk">Angular</li>
                                         <li class="puceOk">Ionic</li>
-                                        <li>React</li>
                                     </ul>
 
                                 </div>
@@ -206,7 +222,6 @@
                                         <li class="titleli">Base de données:</li>
                                         <li class="puceOk">SQL</li>
                                         <li class="puceOk">MySQL</li>
-                                        <li>MongoDB</li>
                                     </ul>
                                 </div>
 
@@ -226,8 +241,7 @@
                                 <div class="col-lg-2 col-md-6">
                                     <ul>
                                         <li class="titleli">Et aussi:</li>
-                                        <li>Méthodologie de projet (Scrum)</li>
-                                        <li>Gestion des Big Data</li>
+                                        <li class="puceOk">Méthodologie de projet (Scrum)</li>
                                         <li class="puceOk">Algorithmie </li>
                                     </ul>
                                 </div>
@@ -239,13 +253,13 @@
                             <!--Page 2 motivation-->
                             <p>
                                 </br>
-                                Curieux de nature et avec l’envie d’apprendre, j’ai déjà suivi le MOOC SecNumacadémie de l’ANSSI sur les modules suivants : Panorama de la SSI, Sécurité de l’authentification, Sécurité sur internet, Sécurité du poste de travail et nomadisme. Je me forme également en autodidacte afin d’acquérir de bonnes bases solides utiles à la poursuite de mon objectif professionnel.
+                                Curieux de nature et avec l’envie d’en apprendre toujours plus, j’ai suivi en plus de la formation Concepteur Développeur d'Application, le MOOC SecNumacadémie de l’ANSSI sur les modules suivants : Panorama de la SSI, Sécurité de l’authentification, Sécurité sur internet, Sécurité du poste de travail et nomadisme. Je me forme également en autodidacte afin d’acquérir de bonnes bases solides utiles à la poursuite de mon objectif professionnel.
                                 </br>
                                 </br>
                                 De nature optimiste, avec une très bonne facilité d’adaptation tant à un poste que dans une équipe, et une curiosité sans fin, je serais capable de m’intégrer au mieux dans votre structure et je serais heureux d’en apprendre davantage à vos côtés.
                                 </br>
                                 </br>
-                                Cette formation étant une réelle opportunité pour moi, je suis plus que motivé à donner le meilleur de moi-même afin de réussir cette formation, et c’est avec plaisir que je mettrai mon expérience dans ce domaine, à votre disposition afin de remplir vos objectifs qui deviendront les miens.
+                                Cette formation a été une réelle opportunité pour moi, je suis plus que motivé à donner le meilleur de moi-même afin de continuer dans cette voie, et c’est avec plaisir que je mettrai mon expérience dans ce domaine, à votre disposition afin de remplir vos objectifs qui deviendront les miens.
                                 </br>
                                 </br>
                                 Si vous voulez plus de renseignements à mon sujet, je serai ravi d’y répondre lors d’un éventuel entretien. Pour plus de renseignements sur la formation, je vous invite à suivre ce lien : <a class="formation " href="https://www.m2iformation.fr/uploads/browser/documents/pdf/lille/fiche_cda-formation_concepteur_developpeur_d_applications_cambrai-oct2020.pdf" target="_blank">"Formation Concepteur Développeur d'Application" </a>
@@ -275,7 +289,6 @@
 
 
         </div>
-        <!--FIN A PROPOS -->
 
 
         <!-- Partie PROJET-->
@@ -284,12 +297,18 @@
                 <!--sert à centrer le contenu et aussi au responsive il faut le faire à chaque partie -->
                 <h2 id="PROJECT">Mes projets</h2>
 
-                <div class="mt-2 mb-2 separator d-flex justify-content-center align-items-center ">
+                <div class="mb-2 separator d-flex justify-content-center align-items-center ">
                     <div class="line"></div>
                     <!--my-4 = margin sur l'axe Y de 4-->
                     <i class="fas fa-folder-open fa-4x mx-4"></i>
                     <div class="line"></div>
                 </div>
+                <!-- boutons des différentes techno -->
+                <button id="all_project_button" class="techno-button">Tout</button>
+                <button id="symfony_button" class="techno-button">Symfony</button>
+                <button id="angular_button" class="techno-button">Angular</button>
+                <button id="php_button" class="techno-button">PHP</button>
+                <button id="javascript_button" class="techno-button">Javascript</button>
 
 
                 <div class="row">
@@ -298,109 +317,109 @@
                     <!--On aura 3 colonne sur pc donc 4 (12/3 = 4) , 
                         6 colonnes sur tablettes et 1 sur mobiles-->
                     <!-- vignette Aperture-->
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 javascript">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-1">
                                 <div class="filter">
                                     <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                                    <img src="asset/img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet3">
-                                <img width="100%" class="image " src="img/imgModalProject/Aperture Taquin.PNG" alt="">
+                                <img width="100%" class="image " src="asset/img/imgModalProject/Aperture Taquin.PNG" alt="">
                             </div>
                         </div>
                     </div>
 
                     <!-- vignette E-gaming-->
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 symfony">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-2">
                                 <div class="filter">
                                     <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                                    <img src="asset/img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet2">
-                                <img width="100%" class="image " src="img/imgModalProject/egaming.PNG">
+                                <img width="100%" class="image " src="asset/img/imgModalProject/egaming.PNG">
                             </div>
                         </div>
                     </div>
 
 
                     <!-- vignette Angupex-->
-                    <div class="col-12 col-md-6 col-lg-3  mb-4">
+                    <div class="col-12 col-md-6 col-lg-3  mb-4 angular">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-3">
                                 <div class="filter">
                                     <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                                    <img src="asset/img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet3">
-                                <img width="100%" class="image " src="img/imgModalProject/Angupex.PNG">
+                                <img width="100%" class="image " src="asset/img/imgModalProject/Angupex.PNG">
                             </div>
                         </div>
                     </div>
 
 
                     <!-- vignette Amalshia-->
-                    <div class="col-12 col-md-6 col-lg-3  mb-4">
+                    <div class="col-12 col-md-6 col-lg-3  mb-4 php">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-4">
                                 <div class="filter">
                                     <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                                    <img src="asset/img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet4">
-                                <img width="100%" class="image " src="img/imgModalProject/Amalshia.PNG">
+                                <img width="100%" class="image " src="asset/img/imgModalProject/Amalshia.PNG">
                             </div>
                         </div>
                     </div>
 
 
                     <!-- vignette webflix-->
-                    <div class="col-12 col-md-6 col-lg-3  mb-4">
+                    <div class="col-12 col-md-6 col-lg-3  mb-4 php">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-5">
                                 <div class="filter">
                                     <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                                    <img src="asset/img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet4">
-                                <img width="100%" class="image " src="img/imgModalProject/webflix.PNG">
+                                <img width="100%" class="image " src="asset/img/imgModalProject/webflix.PNG">
                             </div>
                         </div>
                     </div>
 
                     <!-- vignette immobiliare-->
-                    <div class="col-12 col-md-6 col-lg-3  mb-4">
+                    <div class="col-12 col-md-6 col-lg-3  mb-4 symfony">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-6">
                                 <div class="filter">
                                     <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                                    <img src="asset/img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet4">
-                                <img width="100%" class="image " src="img/imgModalProject/immobiliare.PNG">
+                                <img width="100%" class="image " src="asset/img/imgModalProject/immobiliare.PNG">
                             </div>
                         </div>
                     </div>
 
                     <!-- vignette pizzaparty-->
-                    <div class="col-12 col-md-6 col-lg-3  mb-4">
+                    <div class="col-12 col-md-6 col-lg-3  mb-4 angular">
                         <div class="position-relative">
                             <a href="#" data-toggle="modal" data-target="#project-7">
                                 <div class="filter">
                                     <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                                    <img src="asset/img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojet projet4">
-                                <img width="100%" class="image " src="img/imgModalProject/pizzaparty.PNG">
+                                <img width="100%" class="image " src="asset/img/imgModalProject/pizzaparty.PNG">
                             </div>
                         </div>
                     </div>
@@ -418,7 +437,7 @@
                             <a href="#" data-toggle="modal" data-target="#project-8">
                                 <div class="filter">
                                     <!--Calque sur image-->
-                                    <img src="img/star.gif" alt="">
+                                    <img src="asset/img/star.gif" alt="">
                                 </div>
                             </a>
                             <div class=" baseprojetVide projet5">
@@ -451,7 +470,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/Aperture Taquin.PNG" alt="">
+                                    <img width="100%" src="asset/img/imgModalProject/Aperture Taquin.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -474,7 +493,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/egaming.PNG" alt="">
+                                    <img width="100%" src="asset/img/imgModalProject/egaming.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -497,7 +516,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/Angupex.PNG" alt="">
+                                    <img width="100%" src="asset/img/imgModalProject/Angupex.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -520,7 +539,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/Amalshia.PNG" alt="">
+                                    <img width="100%" src="asset/img/imgModalProject/Amalshia.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -543,7 +562,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/webflix.PNG" alt="">
+                                    <img width="100%" src="asset/img/imgModalProject/webflix.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -566,7 +585,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/immobiliare.PNG" alt="">
+                                    <img width="100%" src="asset/img/imgModalProject/immobiliare.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -591,7 +610,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <img width="100%" src="img/imgModalProject/pizzaparty.PNG" alt="">
+                                    <img width="100%" src="asset/img/imgModalProject/pizzaparty.PNG" alt="">
                                 </div>
 
                                 <div class="modal-footer">
@@ -604,16 +623,14 @@
 
                     <!--Fin PARTIE MODAL -->
                 </div>
-            </div> <br>
-
-
-
+            </div> <br><br>
         </div>
+
         <!-- Partie CONTACT-->
         <div id="div_contact" class="contact" hidden>
 
             <div class="container">
-                <div id="CONTACT" class=" mt-2 mb-2  separator d-flex justify-content-center align-items-center">
+                <div id="CONTACT" class="mb-2  separator d-flex justify-content-center align-items-center">
                     <!--Separateur-->
                     <div class="line"></div>
                     <h2>Me contacter</h2>
@@ -670,8 +687,8 @@
 
             </div>
         </div>
-        <!--FOOTER-->
 
+        <!--FOOTER-->
         <footer>
             <div class="container">
                 <div class="row">
@@ -706,7 +723,7 @@
 
         <div class="bg-copyright text-center py-2">
             <div class="container">
-                <small class="m-0">Copyright &copy; Smaga Michaël 2020 </small>
+                <small class="m-0">Copyright &copy; Smaga Michaël 2021 </small>
             </div>
         </div>
 
@@ -782,12 +799,12 @@
 
 
         <!-- scripts -->
-        <script src="extension/particles/particles.js"></script>
-        <script src="extension/particles/js/app.js"></script>
+        <script src="asset/extension/particles/particles.js"></script>
+        <script src="asset/extension/particles/js/app.js"></script>
 
-        <script src="extension/jquery-3.5.1.min.js"></script>
-        <script src="extension/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
+        <script src="asset/extension/jquery-3.5.1.min.js"></script>
+        <script src="asset/extension/bootstrap.bundle.min.js"></script>
+        <script src="asset/js/script.js"></script>
 
 </body>
 
