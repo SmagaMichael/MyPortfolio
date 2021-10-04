@@ -116,14 +116,14 @@
 
 
     <div class="page">
-       <!-- particles.js container -->
+        <!-- particles.js container -->
 
 
         <!-- Partie PORTFOLIO-->
         <!-- si bg portfolio relative => pointer event ne fonctionne pas mais particules derriere avatar
         si bg portfolio absolute => pointer fonctionne mais particules devant avatar-->
         <div id="div_home" class="bg-portfolio pointer-events: auto">
-        <div id="particles-js"></div> 
+            <div id="particles-js"></div>
             <div class="container text-center fondTitle div-home-child">
                 <br><br>
                 <img width="240" src="asset/img/avatarb.png" alt="Smaga Michaël">
@@ -176,10 +176,12 @@
                                         </br>
                                         D'ici la fin de cette formation, j'aurais vu: </p> -->
                                     <p>
-                                        Ayant fini ma formation de Concepteur Développeur d'Application au centre de formation M2i, ainsi que mon stage en tant que développeur Fullstack chez WeBreathe, (Date de stage:10 Mai 2021 au 4 août 2021), je suis à l'écoute de toute offre pouvant m'intéresser.
+                                        Ayant fini ma formation et obtenu mon titre professionnel de Concepteur Développeur d'Application
+                                        au centre de formation M2i, ainsi que mon stage en tant que développeur Fullstack chez WeBreathe,
+                                        je suis à l'écoute de toute offre pouvant m'intéresser.
                                         </br>
                                         Dans cette formation j'ai pu voir : </p>
-<!-- 
+                                    <!-- 
                                     <p class="d-flex justify-content-center align-items-center  ">(Suivez mon avancée = &#x2611; )</p> -->
                                 </div>
 
@@ -188,7 +190,6 @@
                                         <li class="titleli">Différents langages:</li>
                                         <li class="puceOk">html </li>
                                         <li class="puceOk">css </li>
-                                        <li class="puceOk">java</li>
                                         <li class="puceOk">PHP</li>
                                         <li class="puceOk">JavaScript </li>
                                         <li class="puceOk">UML</li>
@@ -198,11 +199,11 @@
 
                                 <div class="col-lg-2 col-md-6">
                                     <ul>
-                                        <li class="titleli">Framework Java:</li>
+                                        <!-- <li class="titleli">Framework Java:</li>
                                         <li>Spring</li>
                                         <li>Hibernate</li>
                                         <li class="nopuce"></li>
-                                        <br>
+                                        <br> -->
                                         <li class="titleli">Framework PHP:</li>
                                         <li class="puceOk">Symfony</li>
                                     </ul>
@@ -309,6 +310,8 @@
                 <button id="angular_button" class="techno-button">Angular</button>
                 <button id="php_button" class="techno-button">PHP</button>
                 <button id="javascript_button" class="techno-button">Javascript</button>
+                <button id="laravel_button" class="techno-button">Laravel (à venir)</button>
+                <button id="template_button" class="techno-button">Template (à venir)</button>
 
 
                 <div class="row">
