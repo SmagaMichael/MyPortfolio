@@ -678,30 +678,30 @@
                     <form class="contact-form" method="POST">
                         <!--balise pour indiquer le formulaire-->
                         <div class="form-group shadowblock">
-                            <label for="name" class="d-none ">Nom</label>
-                            <input type="text" name="name" id="Nom" placeholder="Nom" class="form-control">
+                            <label for="name" class="d-none ">Nom*</label>
+                            <input onkeyup='javascript:isCharSet()' type="text" name="name" id="Nom" placeholder="Nom*" class="form-control">
                         </div>
 
                         <div class="form-group shadowblock">
-                            <label for="email" class="d-none">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Adresse email" class="form-control">
+                            <label for="email" class="d-none">Email*</label>
+                            <input onkeyup='javascript:isCharSet()' type="email" name="email" id="email" placeholder="Adresse email*" class="form-control">
                         </div>
 
                         <div class="form-group shadowblock">
                             <label for="phone" class="d-none">Téléphone</label>
-                            <input type="phone" name="phone" id="phone" placeholder="Téléphone" class="form-control">
+                            <input onkeyup='javascript:isCharSet()' type="phone" name="phone" id="phone" placeholder="Téléphone" class="form-control">
                         </div>
 
                         <div class="form-group shadowblock">
-                            <label for="Subject" class="d-none">Sujet</label>
-                            <input type="Subject" name="Subject" id="Subject" placeholder="Sujet" class="form-control">
+                            <label for="Subject" class="d-none">Sujet*</label>
+                            <input onkeyup='javascript:isCharSet()' type="Subject" name="Subject" id="Subject" placeholder="Sujet*" class="form-control">
                         </div>
 
                         <label for="message"></label>
-                        <textarea name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message " class="form-control shadowblock"></textarea>
+                        <textarea onkeyup='javascript:isCharSet()' name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message* " class="form-control shadowblock"></textarea>
 
                         <div class="text-center ">
-                            <button class="buttonContact">Envoyer</button>
+                            <button class="buttonContact" disabled>Envoyer</button>
                         </div>
                         <div class="form-group text-center">
                             <a class="envoyermail" href="mailto:smaga.michael@bbox.fr">Ou si vous préférez envoyez moi un Mail directement depuis votre boîte mail en cliquant ici</a>
@@ -832,6 +832,7 @@
         <script src="asset/extension/jquery-3.5.1.min.js"></script>
         <script src="asset/extension/bootstrap.bundle.min.js"></script>
         <script src="asset/js/script.js"></script>
+        <script src="asset/js/contact.js"></script>
 
 </body>
 
