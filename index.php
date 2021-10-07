@@ -478,7 +478,7 @@
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="projet/Exo_Jeu_taquin/index.html" target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="asset/projet/Exo_Jeu_taquin/index.html" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
