@@ -697,8 +697,11 @@
                             <input onkeyup='javascript:isCharSet()' type="Subject" name="Subject" id="Subject" placeholder="Sujet*" class="form-control">
                         </div>
 
-                        <label for="message"></label>
-                        <textarea onkeyup='javascript:isCharSet()' name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message* " class="form-control shadowblock"></textarea>
+                        <div class="form-group shadowblock">
+                            <label for="message" class="d-none"></label>
+                            <textarea onkeyup='javascript:isCharSet()' name="message" id="message" cols="60" rows="10" placeholder="Saisissez votre message* " class="form-control "></textarea>
+
+                        </div>
 
                         <div class="text-center ">
                             <button class="buttonContact" disabled>Envoyer</button>
