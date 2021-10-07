@@ -82,22 +82,7 @@
                         <button id="project_button" class=" buttonSidebar " type="button">Mes projets</button></a>
                 </li>
 
-                <!-- <li>
-                    <i class="far fa-folder-open"></i>
-                    <button type="button" class="buttonSidebar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Lien projets</button>
-                    <ul class="sub-menu">
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <li><a class="dropdown-item" href="projet/Exo_Jeu_taquin/index.html" target="_blank"><button class="buttonSidebarSubmenu">Jeu taquin</button></a></li>
-                            <li><a class="dropdown-item" href="https://www.egaming.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">E-Gaming</button></a></li>
-                            <li><a class="dropdown-item" href="https://www.augupex.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">Angupex</button></a></li>
-                            <li><a class="dropdown-item" href="projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php" target="_blank"><button class="buttonSidebarSubmenu">Illustratrice</button></a></li>
-                            <li><a class="dropdown-item" href="https://www.webflix.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">Webflix</button></a></li>
-                            <li><a class="dropdown-item" href="https://www.immobiliare.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">Immobiliare</button></a></li>
-                            <li><a class="dropdown-item" href="https://www.pizzaparty.smaga-michael.fr/" target="_blank"><button class="buttonSidebarSubmenu">PizzaParty</button></a></li>
 
-                        </div>
-                    </ul>
-                </li> -->
 
                 <li><a onClick="window.open('asset/doc/CV.pdf');">
                         <i class="fas fa-download"></i>
@@ -311,7 +296,7 @@
                 <button id="php_button" class="techno-button">PHP</button>
                 <button id="javascript_button" class="techno-button">Javascript</button>
                 <button id="laravel_button" class="techno-button">Laravel (à venir)</button>
-                <button id="template_button" class="techno-button">Template (à venir)</button>
+                <button id="template_button" class="techno-button">Template</button>
 
 
                 <div class="row">
@@ -423,6 +408,21 @@
                             </a>
                             <div class=" baseprojet projet4">
                                 <img width="100%" class="image " src="asset/img/imgModalProject/pizzaparty.PNG">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- vignette library-->
+                    <div class="col-12 col-md-6 col-lg-3  mb-4 template">
+                        <div class="position-relative">
+                            <a href="#" data-toggle="modal" data-target="#project-8">
+                                <div class="filter">
+                                    <!--Calque sur image-->
+                                    <img src="asset/img/star.gif" alt="">
+                                </div>
+                            </a>
+                            <div class=" baseprojet projet4">
+                                <img width="100%" class="image " src="asset/img/imgModalProject/library.PNG">
                             </div>
                         </div>
                     </div>
@@ -619,6 +619,30 @@
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
                                     <a href="https://www.pizzaparty.smaga-michael.fr/" target="_blank" class="btn btn-success">Voir la maquette</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 8 library-->
+                    <div class="modal fade" id="project-8">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content hauteurModal">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Projet template : "The Library"</h5>
+                                    <button class="close" data-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img width="100%" src="asset/img/imgModalProject/library.PNG" alt="">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                    <a href="http://www.templates.smaga-michael.fr/" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>

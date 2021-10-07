@@ -6,8 +6,6 @@ $("#home_button").click(function(){
     $("#div_contact").prop("hidden",true);
     $("#particles-js").prop("hidden",false);
     $("#navbarNav").removeClass("show");
-
-
 });
 
 
@@ -49,28 +47,54 @@ $("#all_project_button").click(function(){
     $(".angular").prop("hidden",false);
     $(".php").prop("hidden",false);
     $(".javascript").prop("hidden",false);
+    $(".laravel").prop("hidden",false);
+    $(".template").prop("hidden",false);
 });
 $("#symfony_button").click(function(){
     $(".symfony").prop("hidden",false);
     $(".angular").prop("hidden",true);
     $(".php").prop("hidden",true);
     $(".javascript").prop("hidden",true);
+    $(".laravel").prop("hidden",true);
+    $(".template").prop("hidden",true);
 });
 $("#angular_button").click(function(){
     $(".symfony").prop("hidden",true);
     $(".angular").prop("hidden",false);
     $(".php").prop("hidden",true);
     $(".javascript").prop("hidden",true);
+    $(".laravel").prop("hidden",true);
+    $(".template").prop("hidden",true);
 });
 $("#php_button").click(function(){
     $(".symfony").prop("hidden",true);
     $(".angular").prop("hidden",true);
     $(".php").prop("hidden",false);
     $(".javascript").prop("hidden",true);
+    $(".laravel").prop("hidden",true);
+    $(".template").prop("hidden",true);
 });
 $("#javascript_button").click(function(){
     $(".symfony").prop("hidden",true);
     $(".angular").prop("hidden",true);
     $(".php").prop("hidden",true);
     $(".javascript").prop("hidden",false);
+    $(".laravel").prop("hidden",true);
+    $(".template").prop("hidden",true);
+});
+$("#template_button").click(function(){
+    $(".symfony").prop("hidden",true);
+    $(".angular").prop("hidden",true);
+    $(".php").prop("hidden",true);
+    $(".javascript").prop("hidden",true);
+    $(".laravel").prop("hidden",true);
+    $(".template").prop("hidden",false);
+});
+$("#laravel_button").click(function(){
+    $(".symfony").prop("hidden",true);
+    $(".angular").prop("hidden",true);
+    $(".php").prop("hidden",true);
+    $(".javascript").prop("hidden",true);
+    $(".laravel").prop("hidden",false);
+    $(".template").prop("hidden",true);
 });
