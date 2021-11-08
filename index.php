@@ -642,7 +642,7 @@
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="http://www.templates.smaga-michael.fr/" target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="https://www.templates.library.smaga-michael.fr	/" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
