@@ -547,7 +547,7 @@
 
                                 <div class="modal-footer">
                                     <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    <a href="projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php" target="_blank" class="btn btn-success">Voir la maquette</a>
+                                    <a href="asset/projet/Portfolio_Amalshia/Page/page/Page0_Accueil.php" target="_blank" class="btn btn-success">Voir la maquette</a>
                                 </div>
                             </div>
                         </div>
