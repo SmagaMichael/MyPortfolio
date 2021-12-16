@@ -20,7 +20,7 @@
 }
 
 .bg-project{
-    background-image: url(../img/bg_home1.jpg);
+    background-image: url(../img/autre/bg_home1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100%;
@@ -134,4 +134,8 @@
     color: rgb(0, 0, 0) !important;
     background-color: #aa7423 !important;
     border-color:  #aa7423 !important;
+}
+
+.carousel-item p{
+    color: #ffffff;
 }
