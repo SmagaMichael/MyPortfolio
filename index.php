@@ -263,13 +263,15 @@
                     include('case-project/case-taquin.php');
                     include('case-project/case-webflix.php');
                     include('case-project/case-immobiliare.php');
-                    include('case-project/case-amalshia.php');
                     include('case-project/case-egaming.php');
                     include('case-project/case-library.php');
                     include('case-project/case-pizzaparty.php');
                     include('case-project/case-angupex.php');
                     include('case-project/case-lior.php');
+                    include('case-project/case-amalshia.php');
                     include('case-project/case-x-avenir.php');
+
+
                     ?>
                 </div>
                 <!--Fin de la div Row-->
@@ -280,12 +282,13 @@
                     include('modal-project/modal-taquin.php');
                     include('modal-project/modal-egaming.php');
                     include('modal-project/modal-angupex.php');
-                    include('modal-project/modal-amalshia.php');
                     include('modal-project/modal-webflix.php');
                     include('modal-project/modal-immobiliare.php');
                     include('modal-project/modal-pizzaparty.php');
                     include('modal-project/modal-library.php');
                     include('modal-project/modal-lior.php');
+                    include('modal-project/modal-amalshia.php');
+
                     ?>
                 </div>
 
